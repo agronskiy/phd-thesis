@@ -1,0 +1,73 @@
+\resizebox{\textwidth}{!}{
+ \begin{tikzpicture}[-,auto,node distance=3cm,
+  thick,main node/.style={circle,fill=blue!20,draw,font=\sffamily\bfseries}]
+
+  \node[main node] (1) at (0.8,0) {};
+  \node[main node] (2) at (0,3.7) {};
+  \node[main node] (3) at (3,6) {};
+  \node[main node] (4) at (6,3.7) {};
+  \node[main node] (5) at (5.2,0) {};
+  
+  \path[every node/.style={font=\sffamily\tiny}]
+    (1) edge[onslide=<2->{highlight}]  (2)
+    	edge (3)
+	edge  (4)
+	edge  (5)
+     (2) edge (3)
+     	edge (4)
+	edge[onslide=<3->{highlight}] (5)
+    (3) edge[onslide=<5->{highlight}] (4)
+    	edge (5)
+    (4) edge[onslide=<4->{highlight}] (5);
+ \end{tikzpicture}
+}
+
+\resizebox{\textwidth}{!}{
+ \begin{tikzpicture}[-,auto,node distance=3cm,
+  thick,main node/.style={circle,fill=blue!20,draw,font=\sffamily\bfseries}]
+
+  \node[main node] (1) at (0.8,0) {};
+  \node[main node] (2) at (0,3.7) {};
+  \node[main node] (3) at (3,6) {};
+  \node[main node] (4) at (6,3.7) {};
+  \node[main node] (5) at (5.2,0) {};
+  
+  \path[every node/.style={font=\sffamily\tiny}]
+    (1) edge[onslide=<2->{highlight}]  (2)
+    	edge (3)
+	edge (4)
+	edge (5)
+     (2) edge (3)
+     	edge (4)
+	edge[onslide=<4->{highlight}] (5)
+    (3) edge[onslide=<5->{highlight}] (4)
+    	edge (5)
+    (4) edge[onslide=<3->{highlight}] (5);
+ \end{tikzpicture}
+}
+ 
+\resizebox{\textwidth}{!}{
+ \begin{tikzpicture}[-,auto,node distance=3cm,
+  thick,main node/.style={circle,fill=blue!20,draw,font=\sffamily\bfseries}]
+
+  \node[main node] (1) at (0.8,0) {};
+  \node[main node] (2) at (0,3.7) {};
+  \node[main node] (3) at (3,6) {};
+  \node[main node] (4) at (6,3.7) {};
+  \node[main node] (5) at (5.2,0) {};
+  
+  \path[every node/.style={font=\sffamily\tiny},
+  	every path/.style={red,ultra thick}]
+    (1) edge node{5}  (2)
+    	edge[onslide=<5->{default}]  (3)
+	edge[onslide=<2->{default}]  (4)
+	edge[onslide=<4->{default}]  (5)
+     (2) edge[onslide=<3->{default}]  (3)
+     	edge[onslide=<6->{default}]  (4)
+	edge (5)
+    (3) edge (4)
+    	edge[onslide=<7->{default}] (5)
+    (4) edge (5);
+ \end{tikzpicture}
+}
+ %

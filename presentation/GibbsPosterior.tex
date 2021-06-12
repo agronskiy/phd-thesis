@@ -1,0 +1,50 @@
+%\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}
+	\begin{axis}[
+	width=1.3\textwidth,
+	xticklabels={,,},
+	yticklabels={,,},
+	ymin=0,
+    	ymax=1.5,
+	xlabel=\tiny{solutions $c$},
+	ylabel=\tiny{$p_\beta(c | X)$},
+	xticklabel style={inner sep=0pt},
+	yticklabel style={inner sep=0pt}
+	]
+	\only<1>{\addplot[
+	   red,
+	   very thick,
+	   domain=-2:2,
+	   samples=201,
+	]
+	   {exp(-(x)^2 / (2*0.1)) / (sqrt(0.1 * 2*pi))};}
+	   
+	%%
+	\only<2>{\addplot[
+	   red,
+	   very thick,
+	   domain=-2:2,
+	   samples=201,
+	]
+	   {exp(-(x)^2 / (2*0.5)) / (sqrt(0.5 * 2*pi))};}
+	%%
+	\only<3>{\addplot[
+	   red,
+	   very thick,
+	   domain=-2:2,
+	   samples=201,
+	]
+	   {exp(-(x)^2 / (2*1)) / (sqrt(1 * 2*pi))};}
+	\only<1->{%
+	\draw[densely dashed] ({axis cs:0,0}|-{rel axis cs:0,0}) -- ({axis cs:0,0}|-{rel axis cs:0,1}) node[midway, above, sloped, yshift=-.1cm] {\tiny{optimal $c^\bot$}};}%
+	  %%
+	\only<4->{\addplot[
+	   red,
+	   very thick,
+	   domain=-2:2,
+	   samples=201,
+	]
+	   {exp(-(x)^2 / (2* 2)) / (sqrt(2 * 2 * pi))};}
+	\end{axis}
+	\end{tikzpicture}%
+%}

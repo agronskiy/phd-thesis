@@ -1,0 +1,18 @@
+% needs \usetikzlibrary{fit}
+\begin{tikzpicture}[-,auto,node distance=3cm,
+  thick,main node/.style={circle,fill=blue!20,draw,font=\sffamily\bfseries}]
+
+  \node[main node] (1) at (0,0) {\alert<1,3>{$W_1$}};
+  \node[main node] (2) at (1,1) {\alert<1,3>{$W_2$}};
+  \node[main node] (3) at (0,2) {\alert<1,3>{$W_3$}};
+  \node[main node] (4) at (1,3) {\alert<1>{$W_4$}};
+  \node[main node] (5) at (0,4) {\alert<1>{$W_5$}};
+  \node[main node] (6) at (1,5) {\alert<1>{$W_6$}};
+  \node at (0.5,6) {$\vdots$};
+  
+  \onslide<2-3>{%
+  \node[draw=red,dotted, xshift=1, fit=(1) (2) (3), label={[red,xshift=1.25cm]left:$\S_n(c_1)$}]  {};}
+  \onslide<2>{%
+  \node[draw=blue, dotted, xshift=-1, fit=(3) (4) (5), label={[blue,xshift=1.25cm]left:$\S_n(c_2)$}] {};}
+
+ \end{tikzpicture}

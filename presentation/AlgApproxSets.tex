@@ -1,0 +1,50 @@
+\begin{tikzpicture}
+
+\node[color=red] (1) at (1.5,2.5) {$X'$};
+\node[color=blue] (2) at (1.5,1.5) {$X''$};
+
+\coordinate (FirstCenter) at (7.4,3);
+\coordinate (SecCenter) at (6.5,2);
+
+\draw [decorate,decoration={brace,amplitude=10pt}]
+($(2) + (-0.3,-0.1)$ ) -- ( $(1) + (-0.3, 0.1) $ ) node [black,midway,xshift=-0.8cm] {$\mathbb{P}(X)$};
+
+\draw[->,shorten >=0.3cm, color=red,thick,out=0,in=160] (1) to node [pos=0.2,fill=white] {$\mathscr{A}(X')$} (FirstCenter) ;
+\draw[->,shorten >=0.3cm, color=blue,thick,out=0,in=160] (2) to node [pos=0.2,fill=white] {$\mathscr{A}(X'')$} (SecCenter) ;
+
+\draw[draw=none] (0,-2) -- (0,6) -- (10, 6) -- (10,-2);
+
+\only<1>{%
+\filldraw[color=red, fill opacity=0.2] (FirstCenter) circle (2.6);
+\filldraw[color=blue, fill opacity=0.2] (SecCenter) circle (2.3cm);}
+
+\only<2>{%
+\filldraw[color=red, fill opacity=0.2] (FirstCenter) circle (1.9cm);
+\filldraw[color=blue, fill opacity=0.2] (SecCenter) circle (2cm);}
+
+\only<3>{%
+\filldraw[color=red, fill opacity=0.2] (FirstCenter) circle (1.5cm);
+\filldraw[color=blue, fill opacity=0.2] (SecCenter) circle (1.2cm);}
+
+\only<4>{%
+\filldraw[color=red, fill opacity=0.2] (FirstCenter) circle (0.7cm);
+\filldraw[color=blue, fill opacity=0.2] (SecCenter) circle (0.5cm);}
+
+\only<5>{%
+\filldraw[color=red, fill opacity=0.2] (FirstCenter) circle (0.2cm);
+\filldraw[color=blue, fill opacity=0.2] (SecCenter) circle (0.3cm);}
+
+\only<1-6>{%
+\filldraw[color=red] (FirstCenter) circle (0.1cm);
+\filldraw[color=blue] (SecCenter) circle (0.1cm);}
+
+\node[align=center] at (1,4.5) {Data \\ Inputs};
+\node[align=center] at (4,4.5) {Algorithm};
+\node[align=center] at (8,4.5) {Optimal Solutions \\ $C_t^{\mathscr{A}}(X)$};
+\node[align=center] at (3, 0 ) {$I_t^{\mathscr{A}} = \E \Bigl[ \log \Bigl(
+	       |\C|  \frac{|C_t^{\mathscr{A}}(X') \cap C_t^{\mathscr{A}}(X'')|}{|C_t^{\mathscr{A}}(X')| \cdot |C_t^{\mathscr{A}}(X'')|} \Bigr) \Bigr]$};
+
+\only<2->{%
+\node[align=center] at (7,-1) {Increasing STEP $t$ \\
+Extracts more information from input.};}
+\end{tikzpicture}

@@ -1,0 +1,1057 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"new_",
+				"new_file_directory\tstatement"
+			],
+			[
+				"s",
+				"short_filename"
+			],
+			[
+				"os",
+				"os2emxpath\tmodule"
+			],
+			[
+				"wr",
+				"writelines\tfunction"
+			],
+			[
+				"shr",
+				"short_filename\tstatement"
+			],
+			[
+				"fil",
+				"file_content"
+			],
+			[
+				"nois",
+				"noise_model\tparam"
+			],
+			[
+				"std_err",
+				"std_err_final\tstatement"
+			],
+			[
+				"mea",
+				"mean_err_final\tstatement"
+			],
+			[
+				"mean",
+				"mean_err_final"
+			],
+			[
+				"err",
+				"job_mean_err"
+			],
+			[
+				"erro",
+				"error_computing_module\tstatement"
+			],
+			[
+				"error_com",
+				"error_computing_modules\tstatement"
+			],
+			[
+				"ra",
+				"randint\tfunction"
+			],
+			[
+				"p_",
+				"p_joint\tstatement"
+			],
+			[
+				"po",
+				"possible_x1\tstatement"
+			],
+			[
+				"noi",
+				"noise_model\tparam"
+			],
+			[
+				"num",
+				"number_solutions\tstatement"
+			],
+			[
+				"pos",
+				"possible_x2\tstatement"
+			],
+			[
+				"mat",
+				"matplotlib\tmodule"
+			],
+			[
+				"mo",
+				"noise_models"
+			],
+			[
+				"pyp",
+				"pyplot\tmodule"
+			],
+			[
+				"color",
+				"colorbar\tfunction"
+			],
+			[
+				"ga",
+				"job_gammas"
+			],
+			[
+				"job_h_",
+				"job_h_joint"
+			],
+			[
+				"h_",
+				"h_joint\tstatement"
+			],
+			[
+				"repe",
+				"repetitions_for_mi\tstatement"
+			],
+			[
+				"all",
+				"allclose\tfunction"
+			],
+			[
+				"p",
+				"p_joint\tstatement"
+			],
+			[
+				"su",
+				"sum\tfunction"
+			],
+			[
+				"ran",
+				"range2\tstatement"
+			],
+			[
+				"range",
+				"range2\tstatement"
+			],
+			[
+				"nu",
+				"number_solutions\tparam"
+			],
+			[
+				"noise",
+				"noise_model"
+			],
+			[
+				"p_j",
+				"p_j_mu\tstatement"
+			],
+			[
+				"ex",
+				"experiment\tparam"
+			],
+			[
+				"mu",
+				"mutual_inf\tstatement"
+			],
+			[
+				"copu",
+				"compute_p_joint\tfunction"
+			],
+			[
+				"rev",
+				"rev_ij_pair\tstatement"
+			],
+			[
+				"mi",
+				"mi_computing_type"
+			],
+			[
+				"mi_",
+				"mi_computing_type"
+			],
+			[
+				"mi_co",
+				"mi_computing_modules\tstatement"
+			],
+			[
+				"mi_c",
+				"mi_comp_module"
+			],
+			[
+				"ti",
+				"title_template"
+			],
+			[
+				"for",
+				"format"
+			],
+			[
+				"fig",
+				"figure_filename"
+			],
+			[
+				"figu",
+				"figures_folder_name\tstatement"
+			],
+			[
+				"plo",
+				"plot_mutual_information\tfunction"
+			],
+			[
+				"fun",
+				"plot_functions"
+			],
+			[
+				"final",
+				"final_result"
+			],
+			[
+				"common",
+				"common_defs\tmodule"
+			],
+			[
+				"mutu",
+				"mutual_inf_final\tstatement"
+			],
+			[
+				"fina",
+				"final_result\tstatement"
+			],
+			[
+				"one",
+				"onejob_result\tstatement"
+			],
+			[
+				"jo",
+				"job_gammas"
+			],
+			[
+				"com",
+				"compute_mutual_inf\tfunction"
+			],
+			[
+				"cen",
+				"centers_range\tstatement"
+			],
+			[
+				"rig",
+				"right_truncated\tstatement"
+			],
+			[
+				"lef",
+				"left_truncated\tstatement"
+			],
+			[
+				"tr",
+				"truncnorm\tstatement"
+			],
+			[
+				"cur",
+				"curr_p_2_mu\tstatement"
+			],
+			[
+				"cu",
+				"curr_p_1_mu\tstatement"
+			],
+			[
+				"approx",
+				"approx_set2\tparam"
+			],
+			[
+				"noisemode",
+				"noise_models\tmodule"
+			],
+			[
+				"pick",
+				"pickle_filename"
+			],
+			[
+				"def",
+				"defaultdict\tclass"
+			],
+			[
+				"pa",
+				"pathsep\tstatement"
+			],
+			[
+				"dist",
+				"distributions_folder\tstatement"
+			],
+			[
+				"job",
+				"jobnumber"
+			],
+			[
+				"help",
+				"help_a\tfunction"
+			],
+			[
+				"a",
+				"append\tfunction"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_smbp_and_rem/ch_smbp_and_rem.tex",
+			"settings":
+			{
+				"buffer_size": 21705,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "2018-03-06 Gronskiy PhD Talk.tex",
+			"settings":
+			{
+				"buffer_size": 38867,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/agronsky/Google Drive/_Archive/_04 Projects Archive/2017-11 C Permit Application/C permit CV Alex/c_permit_cv_alex.tex",
+			"settings":
+			{
+				"buffer_size": 7746,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_mst/ch_mst.tex",
+			"settings":
+			{
+				"buffer_size": 46090,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-05 ML Talk on ANALCO Paper/2017-05_ML_Talk_ANALCO.tex",
+			"settings":
+			{
+				"buffer_size": 23300,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_generic_approach/ch_generic_approach.tex",
+			"settings":
+			{
+				"buffer_size": 109893,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_free_energy/ch_free_energy.tex",
+			"settings":
+			{
+				"buffer_size": 99607,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_background/ch_background.tex",
+			"settings":
+			{
+				"buffer_size": 18677,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"PdfLaTeX"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"latexto",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 410.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis Presentation"
+	],
+	"file_history":
+	[
+		"/Users/agronsky/Documents/Current Private/2017/2018 Alex Webpage New/agronskiy.github.io/index_ru.html",
+		"/Users/agronsky/Google Drive/_Archive/_02 Personal and Identity Documents/_01 Personal Alex/2018-03 CV Alex/gronskiy_alexey_cv.tex",
+		"/Users/agronsky/Google Drive/_Archive/_02 Personal and Identity Documents/_01 Personal Alex/2018-03 CV Alex/alexey_gronskiy_cv.tex",
+		"/Users/agronsky/Documents/Current Private/_Passports/alex_docs/pass.txt",
+		"/Users/agronsky/Google Drive/_Archive/_04 Projects Archive/2017-11 C Permit Application/C permit CV Alex/c_permit_cv_alex.tex",
+		"/Users/agronsky/Downloads/Flights Report 2018-03-08 22-39z (1).csv",
+		"/Users/agronsky/Documents/Current Private/2017/2018 Alex Webpage New/agronskiy.github.io/index.html",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_introduction/ch_introduction.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_mst/ch_mst.tex",
+		"/Users/agronsky/Downloads/task.py",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis Presentation/2018-03-06 Gronskiy PhD Talk.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/gronskiy_phd_thesis.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2014/2014 Paper_ISIT_2014/_talk/Talk_ISIT14.tex",
+		"/Users/agronsky/Downloads/LaTeX_Praesentation/eth_praesentation_beamer_v1.06/ETHbeamer_demo.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis Presentation/beamerthemeETHbeamer.sty",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2014/2014 Paper_AofA_2014/_Talk/Talk_AofA_FreeEnergy.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis Presentation/GibbsPosterior.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis Presentation/GibbsPlot.tex",
+		"/Users/agronsky/Downloads/LaTeX_Praesentation/eth_praesentation_beamer_v1.06/beamerthemeETHbeamer.sty",
+		"/Users/agronsky/Downloads/LaTeX_Praesentation/readme.txt",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2014/2014 Paper_ISIT_2014/_talk/AlgApproxSets.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2014/2014 Paper_ISIT_2014/_talk/AlgFlow.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2014/2014 Paper_ISIT_2014/_talk/ApproximationSetPosterior.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2014/2014 Paper_ISIT_2014/_talk/ApproximationSets.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2014/2014 Paper_ISIT_2014/_talk/beamerouterthemeumbcfootline.sty",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2014/2014 Paper_ISIT_2014/_talk/CodingScheme.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2014/2014 Paper_ISIT_2014/_talk/GibbsPosterior.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2014/2014 Paper_ISIT_2014/_talk/template.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/TA_IML_17/2017iml/final/master-solution/grading-scheme.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/titlepage/titlepage.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/TA_IML_17/2017iml/final/master-solution/question-3.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/TA_IML_17/2017iml/final/validation.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/TA_IML_17/2017iml/Notes for next year.txt",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/TA_IML_17/2017iml/master-solution/question-3.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/TA_IML_17/2017iml/master-solution/grading-scheme.tex",
+		"/Users/agronsky/Downloads/grading_scheme_3_and_12.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/TA_IML_17/2017iml/master-solution/question-15.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/TA_IML_17/2017iml/final/master-solution/auto/grading-notes.el",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-06-20 AofA Talk/2017-06-20 AofA Talk.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_abstract/ch_abstract.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_generic_approach/ch_generic_approach.tex",
+		"/Users/agronsky/Desktop/students.txt",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2018-01 Report SLT Approach to Generalization/SLT and ASC.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_acknowledgments/ch_acknowledgments.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_background/ch_background.tex",
+		"/Users/agronsky/Sync/alex/Passport_Intl_TXT Alex.txt",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/TA_IML_17/2017iml/final/questions/densityEstimation.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_cv/ch_cv.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/figures/ch_free_energy/posteriors.tikz",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_free_energy/ch_free_energy.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_smbp_and_rem/ch_smbp_and_rem.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/figures/ch_free_energy/kernel.tikz",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/gronskiy_phd_thesis.toc",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_conclusion/ch_conclusion.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/gronskiy_phd_thesis.ilg",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/gronskiy_phd_thesis.ind",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/gronskiy_phd_thesis.nls",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_acknowledgements/ch_acknowledgements.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/gronskiy_thesis_bibliography.bib",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2014/Talk_ML14_MST_FreeEnergy/Talk_ML14_MST_FreeEnergy.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/gronskiy_phd_thesis_idx_style.ist",
+		"/Users/agronsky/Library/Application Support/Sublime Text 3/Packages/LaTeXTools/Default (OSX).sublime-keymap",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2018-01 Paper ISIT 2018/Refs.bib",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/nomenltb.ist",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_nomenclature/ch_nomenclature.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2018-01 Paper ISIT 2018/Paper ISIT 2018.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017 Paper_ANALCO_2017/_ANALCO_2017_Wojtek/analco3.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/gronskiy_phd_thesis.bbl",
+		"/Users/agronsky/Downloads/10.1007%2F978-3-642-00856-6_30.bib",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/My Talks/2015-11 Dept Eval Talk Pictures /algorithm_run_3.eps",
+		"/Users/agronsky/Google Drive/_Current Projects/2017-11 Studying for ML/2018-01 Vishnevskiy GANs/Untitled.m",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/figures/ch_generic_approach/approx_sets--schematic--1.pdf",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/figures/ch_generic_approach/approx_sets--schematic--3.pdf",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/figures/ch_generic_approach/realVsEstimatedGamma_sb1.pdf",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/figures/ch_generic_approach/realVsEstimatedGamma_sb5.pdf",
+		"/Users/agronsky/Documents/Current Private/2017/2018 Alex Webpage New/agronskiy.github.io/_includes/header_ru.html",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/TA_IML_17/2017iml/final/exam.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/TA_IML_17/2017iml/final/questions/ensembles.tex",
+		"/Users/agronsky/Documents/Current Private/2017/2018 Alex Webpage New/agronskiy.github.io/css/bootstrap.css",
+		"/Users/agronsky/Documents/Current Private/2017/2017 Alex Webpage/css/index.css",
+		"/Users/agronsky/Documents/Current Private/2017/2018 Alex Webpage New/agronskiy.github.io/index copy.html",
+		"/Users/agronsky/Documents/Current Private/2017/2018 Alex Webpage New/agronskiy.github.io/css/gron_custom.css",
+		"/Users/agronsky/Documents/Current Private/2017/2018 Alex Webpage New/agronskiy.github.io/css/bootstrap.min.css",
+		"/Users/agronsky/Downloads/templated-linear/index.html",
+		"/Users/agronsky/Downloads/templated-linear/css/skel-noscript.css",
+		"/Users/agronsky/Downloads/templated-linear/css/style.css",
+		"/Users/agronsky/Downloads/templated-linear/left-sidebar.html",
+		"/Users/agronsky/Downloads/1513256850682.analysisexport.csv",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/TA_IML_17/2017iml/final/densityEstimation.tex",
+		"/Users/agronsky/Downloads/1513594435088.analysisexport.csv",
+		"/Users/agronsky/Downloads/1513256354932.analysisexport.csv",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_SLT_Script/slt_script_merging_svn/SLT_Script.tex",
+		"/Users/agronsky/Downloads/skript (1).tex",
+		"/Users/agronsky/Downloads/S002200001730212X.bib",
+		"/Users/agronsky/Downloads/citeulike-1698953.bib",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2015/Paper_NIPS_2015_Yatao/YB_sdp.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2014/2014 Paper_ISIT_2014/MST.tex",
+		"/Users/agronsky/Downloads/10.1007%2F978-3-642-21587-2_2.bib",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/submission.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/problems_maximum_subarray_sum.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/_00 ETH Project Archive/2015/Paper_NIPS_2015_Yatao/YB-nips15.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017 Paper_TCS/TCS_2016_FreeEnergy.tex",
+		"/Users/agronsky/Downloads/calendar.ics",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/uncertainty.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/conclusion.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/proofs.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/multiple_instances.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/prototypic_discrete.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/references.bib",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/problems.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/prototypic_expected_similarity.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/prototypic_continuous.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/solution_similarity.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/prototypic.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/prototypic_model.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/solution_gibbs.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/solution_approximation.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/solution_jm.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/solution_setting.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/solution_approaches.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/related_work.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/Proj_Uncertainty_Widmayer/publications/jcss/introduction.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_generic_approach/ch_generic_approach.tex\n\\chapter{Free Energy}",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/figures/ch_mst.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017 Paper_TCS/_onefileversion/TCS_2016_FE_OneFile_after_WS.tex",
+		"/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017 Paper_ANALCO_2017/_ANALCO_2017_Deprecated/ANALCO_2017.tex",
+		"/Users/agronsky/Downloads/Combinatorics_and_Graph_Theory.bibtex",
+		"/Users/agronsky/Downloads/Combinatorics_and_Graph_Theory (1).bibtex"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"geome",
+			"\\append",
+			"bird's",
+			"proof",
+			"appen",
+			"xcolor",
+			"Xu",
+			"Maximum Ent",
+			"maximum ent",
+			"plain, noframenumbering",
+			"setroadmapfootline",
+			"\\begin{frame}[plain, noframenumbering]{Roadmap}",
+			"setfoo",
+			"noframenumbering",
+			"noframenumbering\\",
+			"noframe",
+			"main theorem",
+			"main theo",
+			"block",
+			"theorem",
+			"can be",
+			"align",
+			"eLPA",
+			"eLPA can b",
+			"ritten",
+			"rewritten",
+			"annealed",
+			"example",
+			"rich",
+			"columns",
+			"[1]",
+			"via",
+			"quenched",
+			"line",
+			"\\insertframetitle",
+			"quenc",
+			"statistical mech"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"noframenumbering",
+			"{\\setroadmapfootline \\begin{frame}[plain, noframenumbering]{Roadmap}",
+			"plain, noframenumbering"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_smbp_and_rem/ch_smbp_and_rem.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15433,
+								15522
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "2018-03-06 Gronskiy PhD Talk.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38867,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7402,
+								7402
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 204,
+								"count": 2164,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4474.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/agronsky/Google Drive/_Archive/_04 Projects Archive/2017-11 C Permit Application/C permit CV Alex/c_permit_cv_alex.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7746,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7234,
+								7286
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 451,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_mst/ch_mst.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 46090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40159,
+								40159
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 15859.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-05 ML Talk on ANALCO Paper/2017-05_ML_Talk_ANALCO.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18364,
+								18349
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9922.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_generic_approach/ch_generic_approach.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 109893,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								74559,
+								74723
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 25651.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_free_energy/ch_free_energy.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 99607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								94971,
+								95017
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 35052.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/agronsky/Google Drive/_Long and Large Projects/ETH Zurich Current/2017-12 Thesis/Thesis TeX/ch_background/ch_background.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17865,
+								17924
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6067.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 116.0
+	},
+	"output.find_results":
+	{
+		"height": 415.0
+	},
+	"output.latextools":
+	{
+		"height": 215.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 102.0
+	},
+	"pinned_build_system": "",
+	"project": "gronskiy_phd_presentation.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Grading/grading_objectives.aux"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/Sublime/widmayer_group_free_energy.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 347.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 378.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 282.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
