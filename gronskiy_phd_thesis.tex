@@ -1,0 +1,408 @@
+\documentclass[a4paper,10pt,twoside]{book}
+
+\usepackage[ruled,vlined,linesnumbered,commentsnumbered]{algorithm2e}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools} % For \mathclap
+\usepackage{bbm} % For indicator function
+\usepackage{xfrac} % For slanted fracs (1/2 for example)
+\usepackage[aboveskip=1mm,belowskip=-3mm,font=small,labelfont={sf,bf},labelsep=quad]{caption}
+\usepackage{chngcntr}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{float} % For floating algorithms.
+\usepackage[paperwidth=17cm,paperheight=24cm,left=2.25cm,right=2.25cm,top=3.5cm,bottom=2.5cm]{geometry}
+% \usepackage[paperwidth=210mm,paperheight=297mm,left=4cm,right=4cm,top=5cm,bottom=5cm, includehead, includefoot]{geometry}
+\usepackage{graphicx}
+\usepackage[labelformat=simple]{subcaption}
+\usepackage{lmodern}
+\usepackage{makecell}  % Allows forlammting incide tabular cells
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage{titlesec}
+\usepackage{mathrsfs}
+\usepackage{booktabs}
+\usepackage{chngcntr}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage[makeindex]{imakeidx} % For indexing
+% \indexsetup{othercode=\small} % Small font case for index
+\usepackage[totoc, rule=.5pt, indentunit=3pt, columnsep=14pt]{idxlayout}
+\makeindex[intoc, columns=2, options={-s gronskiy_phd_thesis_idx_style.ist}]
+
+% This adds `~` to sub-items of the Index. See also the
+%  `gronskiy_phd_thesis_idx_style.ist` file.
+\makeatletter
+\renewcommand{\indexsubsdelim}{\raisebox{0.2ex}{\resizebox{.5em}{0.5ex}{$\sim$}}~}%
+\makeatother
+
+\usepackage[intoc, refeq, refpage, noprefix]{nomencl} % For nomenclature
+\usepackage{hyperref}
+
+% For titlepage
+\usepackage{textcase} % for \MakeTextUppercase
+\usepackage{soul} % for letterspacing
+\sodef\allcapsspacing{\upshape}{0.08em}{0.5em}{0.4em}%
+\sodef\lowsmallcapsspacing{\scshape}{0.03em}{0.4em}{0.5em}%
+\DeclareRobustCommand{\spacedallcaps}[1]{\MakeTextUppercase{\allcapsspacing{#1}}}%
+\DeclareRobustCommand{\spacedlowsmallcaps}[1]{\MakeTextLowercase{\textsc{\lowsmallcapsspacing{#1}}}}
+
+\makeatletter
+\def\pagedeclaration#1{%
+	\if@printeqref \else \hfill \hyperlink{page.#1}{p.~#1} \fi }
+\def\eqdeclaration#1{\hfill Eq.~\hyperlink{equation.#1}{(#1)}}
+\makeatother
+
+\usepackage[authoryear]{natbib}
+\bibliographystyle{elsarticle-harv}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.13} % Comment out because with Wojtek didn't work
+\usetikzlibrary{calc}
+\usepackage{tikzscale}
+% Julien's pictures need that
+\usetikzlibrary{shapes,fit}
+\usepgfplotslibrary{groupplots}
+\definecolor{skyblue1}{HTML}{348ABD}
+\definecolor{scarletred1}{HTML}{A60628}
+\definecolor{bkgndgray1}{HTML}{EEEEEE}
+\definecolor{purple1}{HTML}{7A68A6}
+
+% \linenumbers  % Comment out to get line numbering throughout all the thesis.
+
+% Cell formatting
+\renewcommand\cellalign{tl}
+
+\newtheoremstyle{mystyle}
+	{}
+	{}
+	{\itshape}
+	{}
+	{\sffamily\bfseries}
+	{.}
+	{ }
+	{}
+
+\theoremstyle{mystyle}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{axiom}{Axiom}
+\newtheorem{conj}{Conjecture}
+\newtheorem{statement}{Statement}
+\newtheorem{remark}{Remark}
+\newtheorem{example}{Example}
+
+\renewcommand{\qedsymbol}{\quad\rule{1mm}{3mm}}
+
+\newcommand{\myremark}{{\sffamily\bfseries Remark. }}
+\newcommand{\myargremark}[1]{{\sffamily\bfseries Remark (#1). }}
+
+\linespread{1.1}
+\renewcommand{\arraystretch}{1.15}
+
+\makeatletter
+	\def\@textbottom{\vskip \z@ \@plus 3pt}
+	\let\@texttop\relax
+\makeatother
+
+\newcommand{\dotcup}{\;\ensuremath{\mathaccent\cdot\cup}\;}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+% For Russian italics.
+\DeclareRobustCommand{\cyrins}[1]{%
+  \begingroup\fontfamily{cmr}%
+  \foreignlanguage{russian}{#1}%
+  \endgroup
+}
+
+\setlength\marginparwidth{2cm}
+\newcommand\marginal[1]{\marginpar{\raggedright\parindent=-2pt #1}}
+\newcommand\AGcomm[1]{\marginal{\textbf{\colorbox{red}{AGtodo:}}\\ \tiny #1}}
+\newcommand\agcomm[1]{\AGcomm{#1}}
+
+\newcommand{\Expct}{\mathbb{E}}
+\newcommand{\Ind}{\mathbbm{1}}
+\newcommand{\Var}{{\mathrm{Var}}}
+\renewcommand{\Prob}{{\mathbb{P}}}
+\newcommand{\Cov}{{\mathrm{Cov}}}
+\newcommand{\KL}{\mathcal{D}^{\text{KL}}}
+\newcommand{\MI}{\mathrm{MI}}
+
+% AG: Better-looking overbar, still shorter than crude \overline
+\renewcommand{\bar}[2][2mu]{\mspace{#1}\overline{\mspace{-#1}#2\mspace{-#1}}\mspace{#1}}
+\renewcommand{\hat}{\widehat}
+\newcommand{\data}{X}
+\newcommand{\algo}{\mathscr{A}}
+
+% AG: independence symbol
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+
+\newcommand{\e}{\mathrm{e}}
+\newcommand*{\QEDA}{\hfill\ensuremath{\square}}
+\def\E{ {\mathbb{E}}}
+\def\Tbb{{\mathbb{T}}}
+
+\def\D{{\cal D}}
+\def\hr{\bar{R}}
+\def\S{{\cal S}}
+\def\C{{\cal C}}
+\def\hb{\hat{\beta}}
+\def\hbs{\hat{\beta}^*}
+\def\hG{\hat{G}}
+\def\wz{\widehat{Z}}
+\def\wr{\widehat{R}}
+\def\frenergy{\mathcal{F}}
+\def\hfrenergy{\hat{\mathcal{F}}}
+\def\eps{\varepsilon}
+\def\parsec{\par\noindent}
+\def\med{\medskip\parsec}
+
+% From JCSS paper.
+\def\JM{{JM}}
+\def\MR{{MR}}
+\def\SIM{{SIM}}
+\def\ESIM{{ESIM}}
+\def\GSIM{{GSIM}}
+
+\def\tJM{\textsc{Joint Minimizer}}
+\def\tFI{\textsc{First Intersection}}
+\def\tMR{\textsc{Minimax Regret}}
+\def\tSIM{\textsc{Similarity}}
+\def\tESIM{\textsc{Estimated Similarity}}
+\def\tGSIM{\textsc{Gibbs-Similarity}}
+\def\tRandom{\textsc{Random}}
+\def\tPickOne{\textsc{Pick One}}
+\def\tUpperBound{\textsc{Upper Bound}}
+\def\tAsymptotic{\textsc{Asymptotic}}
+\def\tOptimalOffline{\textsc{Optimal Offline}}
+
+\def\good{stable}
+\def\bad{unstable}
+\def\sgood{\mathcal{C}_\text{\good}}
+\def\sbad{\mathcal{C}_\text{\bad}}
+\def\Good{Stable}
+\def\Bad{Unstable}
+\def\G{s}
+\def\B{u}
+\def\g{n_\text{\G}}
+\def\b{n_\text{\B}}
+\def\DG{\mathcal{D}_\text{\G}}
+\def\DB{\mathcal{D}_\text{\B}}
+\def\FG{F_\text{\G}}
+\def\FB{F_\text{\B}}
+\def\R{r}
+
+% For sMbp vs REM chapter.
+\newcommand{\prem}{p^{\mathrm{rem}}}
+\newcommand{\psmbp}{p^{\mathrm{smbp}}}
+\newcommand{\Rrem}{R^{\mathrm{rem}}}
+\newcommand{\Rsmbp}{R^{\mathrm{smbp}}}
+\newcommand{\Zrem}{Z^{\mathrm{rem}}}
+\newcommand{\Zsmbp}{Z^{\mathrm{smbp}}}
+
+% The trick to enable \subfloat commands coming from another article:
+\newcommand{\subfloat}[2][]{%
+   \begin{subfigure}{\linewidth}%
+     #2%
+     \caption{}%
+     #1%
+   \end{subfigure}}
+
+
+\counterwithin{figure}{chapter}  % Package chngcntr
+\counterwithin{table}{chapter}  % Package chngcntr
+\counterwithin{equation}{chapter}  % Package chngcntr
+\counterwithin{algocf}{chapter}  % Package chngcntr
+\counterwithin{theorem}{chapter}  % Package chngcntr
+\counterwithin{definition}{chapter}  % Package chngcntr
+\counterwithin{statement}{chapter}  % Package chngcntr
+\counterwithin{conj}{chapter}  % Package chngcntr
+
+
+% Babel package requires \addto\captionsenglish
+\definecolor{figuresquarecolor}{gray}{0.85}
+\addto\captionsenglish{\renewcommand{\figurename}{{\color{figuresquarecolor}{\rule{7pt}{7pt}}}\hspace{1mm}Figure}}
+\definecolor{tablesquarecolor}{gray}{0.85}
+\addto\captionsenglish{\renewcommand{\tablename}{{\color{tablesquarecolor}{\rule{7pt}{7pt}}}\hspace{1mm}Table}}
+
+% Changing figure reference from `1a` to `1(a)`. Needs also [labelformat=simple] option.
+\renewcommand\thesubfigure{(\alph{subfigure})}
+
+\sloppy
+\allowdisplaybreaks
+
+%% This code creates the groups for nomenclature
+% -----------------------------------------
+\usepackage{etoolbox}
+\renewcommand\nomgroup[1]{%
+	\bigskip
+  \item[\sffamily\bfseries%
+  \ifstrequal{#1}{A}{General Notation}{%
+  \ifstrequal{#1}{B}{Probability Theory}{%
+  \ifstrequal{#1}{C}{Information Theory}{%
+  \ifstrequal{#1}{D}{Approximation Set-Based Approaches (Chapter~\ref{ch:gen_appch})}{%
+  \ifstrequal{#1}{E}{Algorithmic Approximation Set Regularization (Chapter~\ref{ch:mst})}{%
+  \ifstrequal{#1}{F}{Statistical Mechanics (Chapters~\ref{ch:free_energy} and~\ref{ch:smbp_and_rem})}{%
+  }}}}}}%%
+]}
+% -----------------------------------------
+
+% A command cancelling ref to eq and page, giving def instead
+\newcommand{\mynomdef}[1]{\nomnorefeqpage\hfill Def.~\ref{#1}}
+
+% Changing name of nomenclature
+\renewcommand{\nomname}{Notation}
+
+% This adds epigraph to nomenclature
+\renewcommand{\nompreamble}{%
+	\hfill
+	\begin{minipage}[t]{.75\textwidth}
+	  \textit{PHILOSOPHERS: \\
+	    --- Why? \\
+	    --- Why not! \\
+	    MATHEMATICIANS:\\
+	    --- $y$? \\
+	    --- $y_0$!}\\
+	  \hrule
+	  \vspace{.2cm}
+	  \hfill
+	  \textsc{--- A folklore joke}
+	\end{minipage}
+}
+\setlength{\nomitemsep}{0pt}
+\makenomenclature
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN OF DOCUMENT %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\pagenumbering{roman}
+
+\input{titlepage/titlepage}
+
+\pagestyle{fancy}
+% \setlength{\topmargin}{-1mm}
+% \setlength{\headheight}{5mm}
+% \setlength{\headsep}{5mm}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\fancyhf{}
+\fancyhead[EL]{\thepage}
+\fancyhead[ER]{\textsc{\nouppercase{\leftmark}}}
+\fancyhead[OL]{\textsc{\nouppercase{\rightmark}}}
+\fancyhead[OR]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\definecolor{chaptercolor}{gray}{0.5}
+\definecolor{chapternumbercolor}{gray}{0.8}
+
+\newcommand{\chapterformat}[1]{
+	\begin{flushright}
+		\parbox{105mm}{\flushright\LARGE\bfseries #1}
+	\end{flushright}
+}
+
+\titleformat{\chapter}{\normalfont\sffamily}{}{0pt}{\chapterformat}
+\titleformat{\section}{\large\sf\bfseries}{\thesection\quad}{0pt}{}
+\titleformat{\subsection}{\normalsize\sf\bfseries}{\thesubsection\quad}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\sf\bfseries}{\quad}{0pt}{}
+\titleformat{\paragraph}[runin]{\normalsize\sf\bfseries}{\theparagraph}{0pt}{}
+\let\oldparagraph=\paragraph
+\renewcommand\paragraph[1]{\oldparagraph{#1.}}
+\titlespacing*{\chapter}{0pt}{-10mm}{10mm}
+\titlespacing*{\paragraph}{0mm}{1mm}{5mm}
+
+\input{ch_abstract/ch_abstract}
+
+\input{ch_acknowledgments/ch_acknowledgments}
+
+\cleardoublepage
+
+% \newgeometry{paperwidth=18cm,paperheight=24cm,left=2.5cm,right=2.5cm,top=2.9cm,bottom=2.3cm}
+
+\renewcommand{\chapterformat}[1]{
+	\begin{flushright}
+		\parbox{105mm}{\flushright\LARGE\bfseries #1}
+	\end{flushright}
+	\vspace{-1.1cm}
+}
+
+\begin{spacing}{1.09}
+	\tableofcontents
+\end{spacing}
+
+% \tableofcontents
+
+\renewcommand{\chapterformat}[1]{
+	\begin{flushright}
+		{\fontsize{25mm}{1em}\bfseries\color{chapternumbercolor}\thechapter\hspace{-2mm}} \\
+		\parbox{105mm}{\flushright\LARGE\bfseries #1}
+	\end{flushright}
+}
+
+\cleardoublepage
+
+% \restoregeometry
+
+
+\fancyhead[EL]{\thepage}
+\fancyhead[ER]{\textsc{\nouppercase{\leftmark}}}
+\fancyhead[OL]{\thesection\quad\textsc{\nouppercase{\rightmark}}}
+\fancyhead[OR]{\thepage}
+
+\pagenumbering{arabic}
+
+\input{ch_introduction/ch_introduction}
+\cleardoublepage
+
+\input{ch_background/ch_background}
+\cleardoublepage
+
+\input{ch_generic_approach/ch_generic_approach}
+\cleardoublepage
+
+\input{ch_mst/ch_mst}
+\cleardoublepage
+
+\input{ch_free_energy/ch_free_energy}
+\cleardoublepage
+
+\input{ch_smbp_and_rem/ch_smbp_and_rem}
+\cleardoublepage
+
+\input{ch_conclusion/ch_conclusion}
+\cleardoublepage
+
+\renewcommand{\chapterformat}[1]{
+	\begin{flushright}
+		\parbox{105mm}{\flushright\LARGE\bfseries #1}
+	\end{flushright}
+}
+
+\fancyhead[EL]{\thepage}
+\fancyhead[ER]{\textsc{\nouppercase{\leftmark}}}
+\fancyhead[OL]{\textsc{\nouppercase{\rightmark}}}
+\fancyhead[OR]{\thepage}
+
+\markboth{\MakeUppercase\nomname}{\MakeUppercase\nomname}
+\printnomenclature[3cm]
+
+\printindex
+
+\bibliography{gronskiy_thesis_bibliography}
+\addcontentsline{toc}{chapter}{Bibliogrpaphy}
+
+\input{ch_cv/ch_cv}
+
+\end{document}

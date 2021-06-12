@@ -1,0 +1,111 @@
+\nomenclatureentry{C, 00$H(X)$, $H(p)$@[{$H(X)$, $H(p)$}]\begingroup Shannon entropy\nomnorefeqpage\nomeqref {2.2}|nompageref}{13}
+\nomenclatureentry{C, 04$\KL(p \parallel q)$@[{$\KL(p \parallel q)$}]\begingroup Kullback-Leibler divergence\mynomdef{def:kl_divergence}\nomeqref {2.5}|nompageref}{14}
+\nomenclatureentry{C, 04$\MI(X, Y)$@[{$\MI(X, Y)$}]\begingroup mutual information\mynomdef{def:inf_theory_mutual_information}\nomeqref {2.6}|nompageref}{14}
+\nomenclatureentry{B, 07$X \independent Y$@[{$X \independent Y$}]\begingroup independence of random variables\nomeqref {2.6}|nompageref}{14}
+\nomenclatureentry{C, 05a$\mathcal{X}$, $\mathcal{Y}$@[{$\mathcal{X}$, $\mathcal{Y}$}]\begingroup channel input-output alphabets\mynomdef{def:discrete_coding_channel}\nomeqref {2.7}|nompageref}{14}
+\nomenclatureentry{C, 05b$(\mathcal{X}, p(y \vert x), \mathcal{Y})$@[{$(\mathcal{X}, p(y \vert x), \mathcal{Y})$}]\begingroup discrete coding channel\mynomdef{def:discrete_coding_channel}\nomeqref {2.7}|nompageref}{14}
+\nomenclatureentry{C, 05c$(M, n)$@[{$(M, n)$}]\begingroup discrete code parameters\mynomdef{def:discrete_code}\nomeqref {2.7}|nompageref}{15}
+\nomenclatureentry{C, 05d$C$@[{$C$}]\begingroup channel capacity\mynomdef{def:inf_theor_channel_capacity}\nomeqref {2.8}|nompageref}{15}
+\nomenclatureentry{C, 05e$R_\text{code}$@[{$R_\text{code}$}]\begingroup code rate\mynomdef{def:inf_theor_code_rate}\nomeqref {2.9}|nompageref}{15}
+\nomenclatureentry{F, 20a$\langle \sigma_1, \ldots, \sigma_n \rangle$@[{$\langle \sigma_1, \ldots, \sigma_n \rangle$}]\begingroup configuration of spins\nomeqref {2.11}|nompageref}{16}
+\nomenclatureentry{F, 20b$c_{\boldsymbol\sigma}$@[{$c_{\boldsymbol\sigma}$}]\begingroup configuration\nomeqref {2.11}|nompageref}{16}
+\nomenclatureentry{F, 20c$J_{ij}$@[{$J_{ij}$}]\begingroup interaction matrix\nomeqref {2.11}|nompageref}{16}
+\nomenclatureentry{A, 01$\mathcal{X}$@[{$\mathcal{X}$}]\begingroup source of data instances\nomeqref {3.1}|nompageref}{25}
+\nomenclatureentry{A, 01a$X \in \mathcal{X}$@[{$X \in \mathcal{X}$}]\begingroup [random] data instance\nomeqref {3.1}|nompageref}{25}
+\nomenclatureentry{A, 01b$\mathcal{C}$@[{$\mathcal{C}$}]\begingroup set of solutions\nomeqref {3.2}|nompageref}{25}
+\nomenclatureentry{A, 01c$c \in \mathcal{C}$@[{$c \in \mathcal{C}$}]\begingroup solution\nomeqref {3.2}|nompageref}{25}
+\nomenclatureentry{A, 01d$R(c, X)$@[{$R(c, X)$}]\begingroup cost function\nomeqref {3.3}|nompageref}{25}
+\nomenclatureentry{A, 01e$\mathcal{P} = (\mathcal{X}, \mathcal{C}, R)$@[{$\mathcal{P} = (\mathcal{X}, \mathcal{C}, R)$}]\begingroup optimization problem \nomnorefeqpage\hfill Def.~\ref{def:optimization_problem_definition}\nomeqref {3.3}|nompageref}{25}
+\nomenclatureentry{A, 01f$\mathcal{C}^\bot(X)$@[{$\mathcal{C}^\bot(X)$}]\begingroup set of empirical optimizers\nomeqref {3.4}|nompageref}{26}
+\nomenclatureentry{A, 01g$R^\bot(X)$@[{$R^\bot(X)$}]\begingroup optimal cost\nomeqref {3.6}|nompageref}{26}
+\nomenclatureentry{A, 01h$PG(X \mid X^0)$@[{$PG(X \mid X^0)$}]\begingroup problem generator\nomeqref {3.7}|nompageref}{26}
+\nomenclatureentry{D, 01$\mathcal{C}_\gamma (X, R)$@[{$\mathcal{C}_\gamma (X, R)$}]\begingroup $\gamma$-approximation set\nomnorefeqpage\hfill Def.~\ref{def:approximation_set}\nomeqref {3.9}|nompageref}{27}
+\nomenclatureentry{D, 01a$\mathbb{T}$@[{$\mathbb{T}$}]\begingroup set of messages\nomeqref {3.10}|nompageref}{32}
+\nomenclatureentry{D, 01b$\tau \in \mathbb{T}$@[{$\tau \in \mathbb{T}$}]\begingroup message\nomeqref {3.10}|nompageref}{32}
+\nomenclatureentry{D, 01c$X', X''$@[{$X', X''$}]\begingroup two instances (ASC scenario)\nomeqref {3.11}|nompageref}{32}
+\nomenclatureentry{D, 01da$\tau_{\text{send}}$@[{$\tau_{\text{send}}$}]\begingroup message sent\nomeqref {3.11}|nompageref}{32}
+\nomenclatureentry{D, 01db$\hat \tau$@[{$\hat \tau$}]\begingroup message decoded\nomeqref {3.12}|nompageref}{32}
+\nomenclatureentry{A, 00$\mathbb{B}^3$@[{$\mathbb{B}^3$}]\begingroup Boolean cube\nomeqref {3.16}|nompageref}{34}
+\nomenclatureentry{A, 00a$\oplus$@[{$\oplus$}]\begingroup sum modulo $2$\nomeqref {3.16}|nompageref}{34}
+\nomenclatureentry{D, 01$\gamma^*$@[{$\gamma^*$}]\begingroup optimal $\gamma$\nomeqref {3.25}|nompageref}{36}
+\nomenclatureentry{D, 01$\Delta \mathcal{C}_\gamma$@[{$\Delta \mathcal{C}_\gamma$}]\begingroup intersection of approximation sets\nomeqref {3.27}|nompageref}{36}
+\nomenclatureentry{D, 02a$I_\gamma$@[{$I_\gamma$}]\begingroup ASC $\gamma$-score\nomeqref {3.28}|nompageref}{36}
+\nomenclatureentry{D, 02ba$C$@[{$C$}]\begingroup approximation capacity\nomeqref {3.29}|nompageref}{36}
+\nomenclatureentry{D, 02b$\hat I_\gamma$@[{$\hat I_\gamma$}]\begingroup empirical ASC $\gamma$-score\nomeqref {3.31}|nompageref}{38}
+\nomenclatureentry{D, 03a$es(\gamma,k(\gamma),l(\gamma))$@[{$es(\gamma,k(\gamma),l(\gamma))$}]\begingroup expected intersection\nomnorefeqpage\hfill Def.~\ref{def:intersection_due_to_gamma}\nomeqref {3.31}|nompageref}{39}
+\nomenclatureentry{D, 03b$sim(\gamma)$@[{$sim(\gamma)$}]\begingroup size expected due to $\gamma$\nomnorefeqpage\hfill Def.~\ref{def:intersection_due_to_sim}\nomeqref {3.31}|nompageref}{39}
+\nomenclatureentry{D, 03c$S_\gamma(X',X'')$@[{$S_\gamma(X',X'')$}]\begingroup instance $\gamma$-similarity\nomeqref {3.35}|nompageref}{41}
+\nomenclatureentry{D, 04$\mathcal{F}_k$@[{$\mathcal{F}_k$}]\begingroup all feasible approximation sets\nomeqref {3.35}|nompageref}{41}
+\nomenclatureentry{D, 03d$S(X',X'')$@[{$S(X',X'')$}]\begingroup instance similarity\nomeqref {3.36}|nompageref}{41}
+\nomenclatureentry{D, 04a$\sgood$, $\sbad$@[{$\sgood$, $\sbad$}]\begingroup \good\ and \bad\ solutions\nomeqref {3.42}|nompageref}{44}
+\nomenclatureentry{D, 04b$\DG$, $\DB$@[{$\DG$, $\DB$}]\begingroup cost distributions\nomnorefeq\nomeqref {3.44}|nompageref}{45}
+\nomenclatureentry{D, 04c$N \in \mathcal{N}$@[{$N \in \mathcal{N}$}]\begingroup noise levels for experiment\nomnorefeq\nomeqref {3.44}|nompageref}{46}
+\nomenclatureentry{D, 04d$P_{\mathscr{A}}(X',X'')$@[{$P_{\mathscr{A}}(X',X'')$}]\begingroup success metric for experiment\nomeqref {3.45}|nompageref}{46}
+\nomenclatureentry{D, 05$S_\gamma^{\mathrm{EXP}}$, $\hat S_\gamma$@[{$S_\gamma^{\mathrm{EXP}}$, $\hat S_\gamma$}]\begingroup theoretical estimator of similarity\nomeqref {3.50}|nompageref}{49}
+\nomenclatureentry{A, 00$\mathbbm{1}\{\cdot\}$@[{$\mathbbm{1}\{\cdot\}$}]\begingroup indicator function\nomnorefeqpage\nomeqref {3.54}|nompageref}{50}
+\nomenclatureentry{B, 00$\Expct[\cdot]$@[{$\Expct[\cdot]$}]\begingroup expected value\nomnorefeqpage\nomeqref {3.55}|nompageref}{50}
+\nomenclatureentry{B, 00$\Var[\cdot]$@[{$\Var[\cdot]$}]\begingroup variance\nomnorefeqpage\nomeqref {3.55}|nompageref}{50}
+\nomenclatureentry{B, 00$\Cov(\cdot, \cdot)$@[{$\Cov(\cdot, \cdot)$}]\begingroup covariance\nomnorefeqpage\nomeqref {3.64}|nompageref}{54}
+\nomenclatureentry{D, 06$w^G_\beta(c, X)$@[{$w^G_\beta(c, X)$}]\begingroup Gibbs weights\nomnorefeq\nomeqref {3.65}|nompageref}{55}
+\nomenclatureentry{D, 06a$\beta$@[{$\beta$}]\begingroup inverse temperature\nomnorefeq\nomeqref {3.65}|nompageref}{55}
+\nomenclatureentry{D, 06c$\beta^*$@[{$\beta^*$}]\begingroup optimal inverse temperature\nomeqref {3.66}|nompageref}{57}
+\nomenclatureentry{D, 06c$w^\Ind_\gamma(c, X)$@[{$w^\Ind_\gamma(c, X)$}]\begingroup indicator weights\nomeqref {3.68}|nompageref}{57}
+\nomenclatureentry{E, 05a$\algo$@[{$\algo$}]\begingroup algorithm\nomnorefeq\nomeqref {4.4}|nompageref}{69}
+\nomenclatureentry{E, 05b$A_i(X)$@[{$A_i(X)$}]\begingroup algorithmic feasible set\mynomdef{def:contractive_algorithm}\nomeqref {4.5}|nompageref}{69}
+\nomenclatureentry{E, 05b$T$@[{$T$}]\begingroup total number of steps\nomnorefeq\nomeqref {4.5}|nompageref}{69}
+\nomenclatureentry{E, 05d$\C^\algo_t(X)$@[{$\C^\algo_t(X)$}]\begingroup algorithmic $t$-approximation set\mynomdef{def:algorithmic_approximation_set}\nomeqref {4.5}|nompageref}{69}
+\nomenclatureentry{E, 05g$I_t^\algo$@[{$I_t^\algo$}]\begingroup algorithmic ASC $t$-score\nomeqref {4.6}|nompageref}{70}
+\nomenclatureentry{E, 05ga$\hat I_t^\algo$@[{$\hat I_t^\algo$}]\begingroup empirical algorithmic ASC $t$-score\nomeqref {4.6}|nompageref}{70}
+\nomenclatureentry{E, 05gb$C^\algo$@[{$C^\algo$}]\begingroup algorithmic approximation capacity\nomeqref {4.7}|nompageref}{70}
+\nomenclatureentry{E, 05g$t^*$@[{$t^*$}]\begingroup optimal stopping time\nomeqref {4.8}|nompageref}{71}
+\nomenclatureentry{E, 10a$G(V, E)$@[{$G(V, E)$}]\begingroup graph\nomnorefeq\nomeqref {4.8}|nompageref}{72}
+\nomenclatureentry{E, 07a$M^G_{\mathrm{adj}}$@[{$M^G_{\mathrm{adj}}$}]\begingroup adjacency matrix\nomeqref {4.9}|nompageref}{74}
+\nomenclatureentry{E, 07b$M^G_{\mathrm{deg}}$@[{$M^G_{\mathrm{deg}}$}]\begingroup degree matrix\nomeqref {4.9}|nompageref}{74}
+\nomenclatureentry{E, 07f$\mathrm{deg}(v)$@[{$\mathrm{deg}(v)$}]\begingroup degree of vertex\nomeqref {4.9}|nompageref}{74}
+\nomenclatureentry{A, 00j$\mathrm{det}(\cdot)$@[{$\mathrm{det}(\cdot)$}]\begingroup determinant\nomeqref {4.9}|nompageref}{74}
+\nomenclatureentry{F, 00a$n$@[{$n$}]\begingroup combinatorial problem size\nomnorefeq\nomeqref {5.0}|nompageref}{84}
+\nomenclatureentry{F, 00d$\S_n$@[{$\S_n$}]\begingroup set of base objects\nomnorefeq\nomeqref {5.0}|nompageref}{84}
+\nomenclatureentry{F, 05a$\C_n$@[{$\C_n$}]\begingroup set of solutions\nomnorefeq\nomeqref {5.0}|nompageref}{84}
+\nomenclatureentry{F, 05d$c \in \C_n$@[{$c \in \C_n$}]\begingroup solution\nomnorefeq\nomeqref {5.0}|nompageref}{84}
+\nomenclatureentry{F, 05h$\S_n(c) \subseteq \S_n$@[{$\S_n(c) \subseteq \S_n$}]\begingroup base objects in colution\nomnorefeq\nomeqref {5.0}|nompageref}{84}
+\nomenclatureentry{F, 05k$X$@[{$X$}]\begingroup random source\nomnorefeq\nomeqref {5.0}|nompageref}{84}
+\nomenclatureentry{F, 05k$w_i(\data) = W_i$@[{$w_i(\data) = W_i$}]\begingroup weight of object\nomnorefeq\nomeqref {5.0}|nompageref}{84}
+\nomenclatureentry{F, 05m$m$@[{$m$}]\begingroup solution set cardinality\nomnorefeq\nomeqref {5.1}|nompageref}{85}
+\nomenclatureentry{F, 05o$N$@[{$N$}]\begingroup solution size\nomnorefeq\nomeqref {5.1}|nompageref}{85}
+\nomenclatureentry{F, 07a$p_\beta(c \vert \data)$@[{$p_\beta(c \vert \data)$}]\begingroup Gibbs posterior\nomeqref {5.2}|nompageref}{86}
+\nomenclatureentry{F, 07c$Z(\beta, \data)$@[{$Z(\beta, \data)$}]\begingroup random partition function\nomeqref {5.2}|nompageref}{86}
+\nomenclatureentry{F, 07f$\beta$@[{$\beta$}]\begingroup inverse temperature\nomeqref {5.2}|nompageref}{86}
+\nomenclatureentry{F, 07h$X', X''$@[{$X', X''$}]\begingroup two instances (statistical mechanics)\nomeqref {5.2}|nompageref}{86}
+\nomenclatureentry{F, 07k$\hat{k}_\beta(\data', \data'')$@[{$\hat{k}_\beta(\data', \data'')$}]\begingroup empirical posterior agreement kernel\mynomdef{def:free_posterior_agreement_kernel}\nomeqref {5.3}|nompageref}{87}
+\nomenclatureentry{F, 07n$\hat I_\beta(X', X'')$@[{$\hat I_\beta(X', X'')$}]\begingroup empirical log-posterior agreement\mynomdef{def:free_log_posteriors}\nomeqref {5.4}|nompageref}{88}
+\nomenclatureentry{F, 07p$I_\beta$@[{$I_\beta$}]\begingroup expected log-posterior agreement\nomeqref {5.5}|nompageref}{88}
+\nomenclatureentry{F, 07r$\mathrm{eLPA}_\beta$@[{$\mathrm{eLPA}_\beta$}]\begingroup expected log-posterior agreement\nomeqref {5.5}|nompageref}{88}
+\nomenclatureentry{F, 07u$\beta^*$@[{$\beta^*$}]\begingroup optimal inverse temperature\nomeqref {5.7}|nompageref}{88}
+\nomenclatureentry{F, 09a$G=(V,E,X)$@[{$G=(V,E,X)$}]\begingroup random graph instance\nomnorefeq\nomeqref {5.9}|nompageref}{92}
+\nomenclatureentry{F, 09c$(W_i)_{i\in E}$@[{$(W_i)_{i\in E}$}]\begingroup edge weights\nomnorefeq\nomeqref {5.9}|nompageref}{92}
+\nomenclatureentry{F, 09e$(U_1,U_2)$@[{$(U_1,U_2)$}]\begingroup bisection\nomnorefeq\nomeqref {5.9}|nompageref}{92}
+\nomenclatureentry{A, 03a$\binom{n}{k}$@[{$\binom{n}{k}$}]\begingroup binomial coefficient\nomeqref {5.10}|nompageref}{92}
+\nomenclatureentry{A, 03c$\mathcal{O}(\cdot)$@[{$\mathcal{O}(\cdot)$}]\begingroup upper-bounded (constant factor)\nomnorefeqpage\nomeqref {5.10}|nompageref}{92}
+\nomenclatureentry{A, 03d$o(\cdot)$@[{$o(\cdot)$}]\begingroup infinitely smaller\nomnorefeqpage\nomeqref {5.10}|nompageref}{92}
+\nomenclatureentry{A, 03f$\Theta(\cdot)$@[{$\Theta(\cdot)$}]\begingroup upper- and lower-bounded (constant factor)\nomnorefeqpage\nomeqref {5.10}|nompageref}{92}
+\nomenclatureentry{F, 09g$d$@[{$d$}]\begingroup half-bisection size\nomnorefeq\nomeqref {5.11}|nompageref}{93}
+\nomenclatureentry{F, 11a$\hb$@[{$\hb$}]\begingroup scaled inverse temperature\nomnorefeq\nomeqref {5.11}|nompageref}{94}
+\nomenclatureentry{F, 03$\bar G(t)$@[{$\bar G(t)$}]\begingroup moment-generating function\nomnorefeq\nomeqref {5.11}|nompageref}{94}
+\nomenclatureentry{F, 11c$\bar{W}_i$@[{$\bar{W}_i$}]\begingroup centralized weights\nomnorefeq\nomeqref {5.11}|nompageref}{94}
+\nomenclatureentry{F, 11aa$\tilde \beta$@[{$\tilde \beta$}]\begingroup unit-free rescaled inverse temperature\nomnorefeq\nomeqref {5.12}|nompageref}{94}
+\nomenclatureentry{F, 11e$\bar R(c)$@[{$\bar R(c)$}]\begingroup centralized cost\nomnorefeq\nomeqref {5.16}|nompageref}{95}
+\nomenclatureentry{F, 11g$\hat{Z}(\beta)$@[{$\hat{Z}(\beta)$}]\begingroup scaled partition function\nomeqref {5.22}|nompageref}{96}
+\nomenclatureentry{F, 11j$\beta_c$@[{$\beta_c$}]\begingroup critical inverse temperature\nomeqref {5.27}|nompageref}{96}
+\nomenclatureentry{F, 11n$\gamma$@[{$\gamma$}]\begingroup noise-to-signal ratio\nomeqref {5.36}|nompageref}{98}
+\nomenclatureentry{F, 07ua$\hat{\beta}^*_{\mathrm{eLPA}}$@[{$\hat{\beta}^*_{\mathrm{eLPA}}$}]\begingroup eLPA-optimal scaled inverse temperature\nomeqref {5.39}|nompageref}{99}
+\nomenclatureentry{F, 19a$D$@[{$D$}]\begingroup random solution overlap\nomnorefeq\nomeqref {5.39}|nompageref}{99}
+\nomenclatureentry{F, 19b$\mathcal{D}$@[{$\mathcal{D}$}]\begingroup uniform distribution over solutions\nomnorefeq\nomeqref {5.39}|nompageref}{99}
+\nomenclatureentry{A, 00e$\vert\{\ldots\}\vert$, $\#\{\ldots\}$@[{$\vert\{\ldots\}\vert$, $\#\{\ldots\}$}]\begingroup cardinality of a set\nomnorefeqpage\nomeqref {5.40}|nompageref}{99}
+\nomenclatureentry{F, 20a$\Lambda_n(\lambda)$@[{$\Lambda_n(\lambda)$}]\begingroup logarithmic generating function\nomeqref {5.91}|nompageref}{108}
+\nomenclatureentry{F, 20c$\Lambda^*(x)$@[{$\Lambda^*(x)$}]\begingroup Fenchel-Legendre transform\nomnorefeq\nomeqref {5.95}|nompageref}{108}
+\nomenclatureentry{B, 10$\Omega$@[{$\Omega$}]\begingroup elementary probabilistic outcomes\nomnorefeq\nomeqref {5.97}|nompageref}{109}
+\nomenclatureentry{F, 07ub$\hat{\beta}^*_{\mathrm{GR}}$@[{$\hat{\beta}^*_{\mathrm{GR}}$}]\begingroup Gibbs risk-optimal scaled inverse temperature\nomeqref {5.126}|nompageref}{114}
+\nomenclatureentry{F, 25$\alpha$@[{$\alpha$}]\begingroup conjectured correlation parameter\nomeqref {5.148}|nompageref}{121}
+\nomenclatureentry{F, 50$(\mathcal{X}, \C^\mathrm{rem}, R^\mathrm{rem})$@[{$(\mathcal{X}, \C^\mathrm{rem}, R^\mathrm{rem})$}]\begingroup definition of REM\nomnorefeq\nomeqref {6.0}|nompageref}{127}
+\nomenclatureentry{F, 50a$\prem_\beta(c "| X)$@[{$\prem_\beta(c "| X)$}]\begingroup Gibbs distribution of REM model\nomeqref {6.5}|nompageref}{129}
+\nomenclatureentry{F, 50c$\psmbp_\beta(c "| X)$@[{$\psmbp_\beta(c "| X)$}]\begingroup Gibbs distribution of sMBP\nomeqref {6.5}|nompageref}{129}

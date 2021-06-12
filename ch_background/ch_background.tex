@@ -1,0 +1,417 @@
+%!TEX root = ../gronskiy_phd_thesis.tex 
+\chapter{Background}
+\label{sec:background}
+
+\hfill
+\begin{minipage}[t]{.75\textwidth}
+\cyrins{%
+\textit{%
+            ``Мы все учились понемногу \\
+            Чему-нибудь и как-нибудь, \\
+            Так воспитаньем, слава богу, \\
+            У нас немудрено блеснуть.''}} \\[.2cm]
+  \textit{(rus. 
+    ``We all meandered through our schooling \\ 
+     haphazard; so, to God be thanks, \\
+     it's easy, without too much fooling, \\
+     to pass for cultured in our ranks.'')}\\
+  \hrule
+  \vspace{.2cm}
+  \hfill
+  \textsc{--- Alexander PUSHKIN}, ``Eugene Onegin''
+\end{minipage}
+\\[.5cm]
+
+In this chapter, we gather some standard background assumptions, definitions,
+theorems, tools and approaches to which we refer throughout the thesis. 
+
+\myargremark{On the notation} 
+Although the thesis involves a broad range of topics and fields (coding,
+combinatorics, learning, algorithms and statistical mechanics), we made an
+effort to unify the notation and keep it consistent \textit{across these
+fields}. While it is not always fully possible, the reader can assume that from
+now on he/she will be exposed to this unified notation. This is done on purpose
+to allow a simpler grasping of analogies between the same notion in different
+contexts. At the cost of this, sometimes the notation might seem to be
+unconventional w.r.t. each specific topic.
+ 
+\section{Probability Theory}
+It is hard to find a field nowadays where probability theory is \textit{not}
+used. Being no exception, we are going to utilize the standard axiomatization of
+probability theory, developed by A.N.~Kolmogorov. While we refer the reader (in
+case of interest) to~\citet{shiryaev95} for details, here we list just basic
+information and our assumptions to keep the notation of the thesis
+self-contained.
+
+Due to the discrete nature of the problems considered in this thesis, we will
+mostly work with discrete distributions (except for data generation sources,
+which will be e.g. Gaussians), hence almost all the theorems and derivations
+will be stated using $\sum$ sign.
+
+For brevity, we will omit subscripts of expectations $\Expct[\cdot]$, variances
+$\Var[\cdot]$ and covariances $\Cov(\cdot, \cdot)$, except for the cases where
+there are several randomness sources and we need to distinguish between them.
+
+We will utilize the term \textit{moment-generating function}
+\index{Moment-generating function} defined as follows.
+\begin{definition}[Moment-generating function]
+  For a random variable $X$, we call a function
+  \begin{equation}
+    G_X(t) \coloneqq \Expct[e^{tX}], \quad t \in \mathbb{R}
+  \end{equation}
+  a moment-generating function of $X$.
+\end{definition}
+Moment-generating functions might not exist, and in some derivations we will pay
+particular attention to that.
+
+\section{Information Theory}
+
+\index{Information theory}
+In this thesis, we are going to utilize some terminology of information theory.
+While one of the best books on the topic remains to be~\citep{Cover:2006}, we
+give here some basic definitions and theorems.
+
+\subsection{Bits, Nats and the Usage of Logarithm}
+\index{Nat (measure of information)}
+\index{Bit (measure of information)}
+It is common to use logarithms to base $2$ in information theory since they
+yield an easily interpretable measure of information called \textit{bit}, which
+quantifies information in \textit{binary outcomes}. 
+
+However, one can resort, without loss of generality, to utilizing the natural
+logarithm: in this case all the results of information theory hold, however, the
+information measure is changed to \textit{nats}, which, informally speaking,
+quantifies information in \textit{base-$e$ outcomes}.
+
+Generally, the base-$e$ approach is characteristic for problems with a
+dominant physical or general mathematical viewpoint, while the base $2$ approach
+is reserved by information theory.
+
+With a slight abuse of notation (but w.l.o.g.), we will utilize same notation
+$\log(\cdot)$ for both binary and natural logarithm, and it is made clear from
+the context, which of them is currently used. For a very general reference, a
+binary logarithm is mainly used in Chapters~\ref{ch:gen_appch} and~\ref{ch:mst},
+and a natural logarithm is used in 
+Chapters~\ref{ch:free_energy} and~\ref{ch:smbp_and_rem}, since the latter ones 
+are more inclined into statistical mechanics.
+
+\subsection{Entropy and KL-Divergence}
+One of the central points of this thesis is \textit{uncertainty}. This concept
+obtained its rigorous definition\footnote{This very phrase ``rigorous definition
+of uncertainty'' may already surprise!} through the notion of \textit{entropy}.
+\index{Shannon entropy}
+\index{Entropy|see{Shannon entropy}}
+\begin{definition}[Shannon entropy]\label{def:shannon_entropy}
+  Assume a discrete random variable $X$ is distributed according to $p(x)$. Then,
+  the Shannon entropy of $X$ is defined as
+  \begin{equation}
+    H(X) \equiv H(p) \coloneqq -\sum_{x} p(x) \log p(x).
+  \end{equation}
+\end{definition}
+\nomenclature[C, 00]{$H(X)$, $H(p)$}{Shannon entropy\nomnorefeqpage}%
+Shannon entropy quantifies the average \textit{surprise of the outcome} $h(x)$:
+\begin{equation}
+  H(X) \equiv \Expct[h(x)] \equiv \Expct[ - \log p(x)].
+\end{equation} 
+The term \textit{surprise} refers here to self-contained information contained
+in the outcome, hence the entropy refers to the average self-contained
+information. The higher is the entropy, the higher is the average self-contained
+information of outcomes, hence the higher is uncertainty of the distribution. A
+classical example is a coin toss experiment, where the heads probability 
+euqals $p$. Consider two characteristic cases: 
+
+a) for a highly unfair coin (i.e. $p = 0$ or $p = 1$), the outcome of each 
+toss does not bring much information (``surprise'') as it is known beforehand. The entropy
+is the lowest (zero bits) in this case; 
+
+b) for a fair coin (i.e. $p = 1/2$), the outcome brings a lot of information, as
+we cannot have any expectations about it beforehand. The entropy is the
+highest (one bit) in this case.
+
+The joint entropy of two random variables $X$ and $Y$ is defined similarly:
+\begin{equation}
+  H(X, Y) \coloneqq -\sum_{x, y} p(x, y) \log p(x, y).
+\end{equation}
+
+\index{Kullback-Leibler divergence}
+Next, we will use the term \textit{Kullback-Leibler divergence} (KL-divergence).
+\begin{definition}[KL-divergence]
+\label{def:kl_divergence}
+  Assuming two discrete distributions $p(x)$ and $q(x)$, a relative entropy, or
+  Kullback-Leibler (KL) divergence is defined as
+  \begin{equation}
+    \KL(p \| q) \coloneqq \sum_{x} p(x) \log \biggl( \frac{p(x)}{q(x)} \biggr).
+  \end{equation}
+  \nomenclature[C, 04]{$\KL(p \parallel q)$}{Kullback-Leibler divergence\mynomdef{def:kl_divergence}}%
+  \index{Kullback-Leibler divergence}
+  \index{KL|see{Kullback-Leibler divergence}}
+\end{definition}
+KL-divergence is one of the possible measures of ``distance'' between
+distributions, and it quantifies how much additional bits (nats) of information
+is required for stable communication, if the receiver assumes source
+distribution $q$ instead of the true source distribution $p$.
+
+The next important quantity is \textit{mutual information}. \index{Mutual information}
+\begin{definition}[Mutual information]
+\label{def:inf_theory_mutual_information}
+  Assuming two random variables $X$ and $Y$, the mutual information between them
+  is defined as
+  \begin{equation}
+    \MI(X, Y) \coloneqq \KL(p(x, y) \| p(x) p(y)) = \sum_{x,y} p(x, y)
+      \log \biggl( \frac{p(x, y)}{p(x)p(y)} \biggr).
+  \end{equation}
+  \nomenclature[C, 04]{$\MI(X, Y)$}{mutual information\mynomdef{def:inf_theory_mutual_information}}%
+  \index{MI|see{Mutual information}}
+\end{definition}
+Mutual information is the information-theoretic measure of independence. In other
+words, one can show that $\MI(X, Y) = 0 \Leftrightarrow X \independent Y$ (symbol
+``$\independent$'' denotes stochastic independence).
+\nomenclature[B, 07]{$X \independent Y$}{independence of random variables}%
+
+We will also utilize the fact that
+\begin{equation}\label{eq:background_mi_decomposition}
+  \MI(X, Y) = H(X) + H(Y) - H(X, Y),
+\end{equation}
+which can be easily observed.
+
+
+\subsection{Coding Theory, Channels and Code Rates}
+\label{sec:background_coding}
+Another concept of information theory, whose importance is exceptionally high
+for our purposes, is \textit{coding theory}. \index{Coding theory} For a
+detailed explanation of the following definitions we refer the reader to~\citep[Chapter 7]{Cover:2006}, while
+here we give, as usual, only necessary basics.
+
+\index{Discrete coding channel}
+\index{Channel|see{Discrete coding channel}}
+\index{Memoryless channel|see{Discrete coding channel}}
+\begin{definition}[Channel] \label{def:discrete_coding_channel}
+  A channel is defined by an input alphabet $\mathcal{X}$, an output alphabet
+  $\mathcal{Y}$, an input distribution $p(x)$ as well as a transition probability
+  matrix $p(y|x)$. We denote such channel as $(\mathcal{X}, p(y|x),
+  \mathcal{Y})$. A message $X$ sent through it turns into a message $Y$ received
+  according to the transition matrix $p(y|x)$.
+\end{definition}
+\nomenclature[C, 05a]{$\mathcal{X}$, $\mathcal{Y}$}{channel input-output alphabets\mynomdef{def:discrete_coding_channel}}%
+\nomenclature[C, 05b]{$(\mathcal{X}, p(y \vert x), \mathcal{Y})$}{discrete coding channel\mynomdef{def:discrete_coding_channel}}%
+
+\index{Memoryless channel|see{Discrete coding channel}}
+\begin{definition}[Memoryless channel]
+  A channel is called memoryless if the probability distribution of the output 
+  depends only on the input at that time and is conditionally independent of 
+  previous channel inputs or outputs.
+\end{definition}
+
+\index{Code}
+\index{Codebook}
+\index{Codebook!Vectors}
+\begin{definition}[Code] \label{def:discrete_code}
+  An $(M, n)$ code for channel $(\mathcal{X}, p(y \vert x), \mathcal{Y})$ consists of
+  \begin{itemize}
+    \item an index set $\{1, \ldots, M\}$;
+    \item an encoding rule $f^n \colon \{1, \ldots, M\} \to \mathcal{X}^n$, where 
+      each $f^n(i)$ is called codebook vector. Set $\{ f^n(i)\}_{i=1}^M$ is called
+      codebook.
+    \item a deterministic decoding rule $g \colon \mathcal{Y}^n \to \{1, \ldots,
+    M\}$.
+  \end{itemize}
+  \nomenclature[C, 05c]{$(M, n)$}{discrete code parameters\mynomdef{def:discrete_code}}%
+\end{definition}
+This definition will become highly important for understanding of Chapter~\ref{ch:gen_appch},
+in conjunction with the definition of channel capacity and code rate.
+
+\index{Channel capacity}
+\begin{definition}[Channel capacity] \label{def:inf_theor_channel_capacity}
+  The channel capacity of the channel $(\mathcal{X}, p(y \vert x), \mathcal{Y})$
+  is defined as
+  \begin{equation}
+    C \coloneqq \max_{p(x)} \MI(X, Y).
+  \end{equation}
+  \nomenclature[C, 05d]{$C$}{channel capacity\mynomdef{def:inf_theor_channel_capacity}}%
+\end{definition}
+
+\index{Code!Rate}
+\begin{definition}[Code rate] \label{def:inf_theor_code_rate}
+  The rate $R_\mathrm{code}$ of an $(M, n)$ code is defined as
+  \begin{equation}
+    R_\mathrm{code} \coloneqq \frac{\log M}{n}
+  \end{equation}
+  bits (nats) per transmission.
+  \nomenclature[C, 05e]{$R_\text{code}$}{code rate\mynomdef{def:inf_theor_code_rate}}%
+\end{definition}
+
+The rate is called \textit{achievable}, if there exists a sequence of
+$(2^{nR_\text{code}}, n)$ codes such that the maximal probability of decoding
+error goes to zero. 
+
+Finally, it is important to realize that the capacity $C$ is the supremum of
+all achievable rates, according to Shannon's Channel Coding Theorem which will be 
+stated later. This fact establishes an important connection between the mutual information
+and the bitrate \index{Channel!Bitrate} of the channel.
+
+\section{Disordered Systems and Statistical Mechanics}
+
+\index{Disordered systems}
+\index{Statistical mechanics}
+Large part of the thesis works with the terminology of statistical mechanics. 
+A good overview is given in~\citep{bovier2012statistical}, and here we summarize
+the basics specific to our work.
+
+\subsection{Disordered Systems}
+\label{sec:background_disordered_systems}
+
+Statistical mechanics, which will play a major role in the second half of this
+thesis (Chapters~\ref{ch:free_energy} and~\ref{ch:smbp_and_rem}), focuses on
+systems consisting of a large number of \textit{particles}, which can find
+themselves in certain aggregated \textit{states}, or \textit{configurations}.
+
+As an example, let us consider a so-called $n$-spin system. It is represented by
+some physical matter which consists of $n$ particles (atoms) $s_i$, each of
+which exhibits one of the two possible directions of the magnetic moment vector
+of the atom, called \textit{spin}
+\begin{equation}
+  \sigma_i \in \S \equiv \{-1, +1\}
+\end{equation}
+(i.e.~atom's magnetic field is directed ``up'' or ``down'').
+\index{State|see{Statistical mechanics}}
+\index{Configuration|see{Statistical mechanics}}
+\index{Statistical mechanics!State}
+\index{Statistical mechanics!Configuration}
+\index{Spin glass}
+In this system, a configuration $c_{\boldsymbol\sigma} \in
+\C$ is defined as an ensemble of spins of its particles, i.e. a vector
+\begin{equation}
+  c_{\boldsymbol\sigma} = \langle \sigma_1, \ldots, \sigma_n \rangle. 
+\end{equation}
+\nomenclature[F, 20a]{$\langle \sigma_1, \ldots, \sigma_n \rangle$}{configuration of spins}%
+\nomenclature[F, 20b]{$c_{\boldsymbol\sigma}$}{configuration}%
+\nomenclature[F, 20c]{$J_{ij}$}{interaction matrix}%
+
+\index{Hamiltonian}
+An object used in conjunction with a configuration is its \textit{Hamiltonian},
+or \textit{energy}:
+\begin{equation}\label{eq:background_deterministic_hamiltonian}
+  R(c_{\boldsymbol\sigma}) = -\sum_{i,j} J_{ij} \sigma_i \sigma_j,
+\end{equation}
+where $J_{ij}$ is a predefined interaction value between spin $i$ and spin
+$j$\footnote{Other Hamiltonians are possible (e.g. the ones with external field,
+etc.) which depends on the model; describing them is beyond the scope of the
+thesis. A very good overview is given in~\citep{bovier2012statistical}.}.
+
+\index{Disorder}
+However, there is no randomness yet in this system, which would bring the
+\textit{disorder}. To introduce it, assume that there is a random variable $X
+\in \mathcal{X}$ which is distributed according to a certain law. In general case,
+its nature should not necessarily be aligned with the nature of other model
+elements (particles, configurations), i.e. from a model design point of view,
+$X$ is a source of randomness and anything more than that. If we now assume that
+the interaction matrix $J_{ij}$ depends on it, i.e. $J_{ij} = J_{ij}(X)$, the
+Hamiltonian becomes random:
+\begin{equation}
+  R(c_{\boldsymbol\sigma}, X) = -\sum_{i,j} J_{ij}(X) \, \sigma_i \sigma_j.
+\end{equation}
+The described system which consists of \\
+%
+\hspace*{1.5\parindent} a) a source of randomness $X \in \mathcal{X}$, and \\
+%
+\hspace*{1.5\parindent} b) a set $\C$ of configurations\footnote{In the main part of
+the thesis, we will call them ``solutions'', highlighting an optimization
+prospective.} $c_{\boldsymbol\sigma}\in \C$, and \\
+%
+\hspace*{1.5\parindent} c) a random Hamiltonian\footnote{In the main part of the
+thesis, we will call it a ``cost'', highlighting an optimization prospective.}
+$R(c_{\boldsymbol\sigma}, X)$ \\ 
+%
+defines a \textit{disordered system}. Its nature is very closely related to the nature
+of randomized optimization, and as we will see already in
+Chapter~\ref{ch:gen_appch}, the ingredients of the latter are the same.
+
+\subsection{Gibbs Measures}
+The Gibbs measures are an important class of measures which arise naturally in conjunction
+with statistical mechanics of disordered systems. It is defined as follows.
+
+\begin{definition}
+  The Gibbs measure over the configurations is the distribution
+  \begin{equation}
+    p_\beta(c | \data) =\frac{1}{Z(\beta, X)} \exp(-\beta R(c, \data)),
+  \end{equation}
+  where the normalization term
+  \begin{equation}
+    \quad Z(\beta, \data) = \sum_{c^\prime\in \C} \exp(-\beta R(c^\prime, \data))
+  \end{equation}
+  is called partition function.
+\end{definition}
+
+\myremark We remind the reader that the above quantities are random due to their the
+parametrization by random source $X$. If it is dropped, then the Hamiltonians
+turn from random into deterministic ones
+(see~\eqref{eq:background_deterministic_hamiltonian} above).
+
+\subsection{Thermodynamic Properties of Disordered Systems}
+Large disordered systems are characterized by macroscopic thermodynamic
+properties. One of the most important for us will be \textit{Helmholtz free
+energy}. While we discuss its altered (adjusted to our needs) version in detail
+later in Chapters~\ref{ch:free_energy} and~\ref{ch:smbp_and_rem}, here we state
+its classical definition and provide motivation for it.
+
+\begin{definition}\label{def:background_free_energy}
+  Helmholtz free energy is originally defined as
+  \begin{equation}
+    \frenergy(\beta, X) = -\frac{1}{\beta}\log [Z(\beta, X)]
+  \end{equation}
+\end{definition}
+Due to parametrization by a random source $X$, Helmholtz free energy is itself a
+random variable. In this situation, studying its moments (e.g. the expected value) becomes a central
+point~\citep[Chapter~9]{bovier2012statistical}. The same will hold for our case,
+as explained in much more detail in Chapter~\ref{ch:free_energy} where we will define
+\begin{equation}
+  \frenergy(\beta) = \mathrm{const} \cdot \Expct_X \frenergy(\beta, X).
+\end{equation}
+The constant is not important for now.
+
+The importance of the log-partition function is hard to overestimate: it
+implicitly contains many other parameters of the system. For example, Shannon
+entropy (see~Definition~\ref{def:shannon_entropy}) of the Gibbs measure can be
+expressed through it:
+\begin{align}
+  H(p_\beta) &= -\sum_{c\in \C} p_\beta(c) \log p_\beta(c) \notag \\
+    &= \log Z(\beta) - \Expct_{p_\beta(c)}[- \beta R(c)] \notag \\
+    &= \log Z(\beta) - \sum_{c \in \C} \frac{- \beta R(c) e^{-\beta R(c)}}{Z(\beta)} \notag \\
+    &= \log Z(\beta) - \beta \, \frac{\partial}{\partial \beta} \log Z(\beta).
+\end{align}
+
+\subsection{Maximum Entropy Principle}
+\label{sec:background_max_entropy}
+
+\index{Maximum entropy principle}
+\index{Testable information}
+\index{Occam's razor}
+In the following, we will refer to Jaynes' \textit{maximum entropy}
+principle~\citep{Jaynes57a,Jaynes57b}. This principle states, informally
+speaking, that the current state of a physical system is represented by a
+distribution which has the highest possible entropy under the given constraints.
+This concept is related to a commonly used Occam's razor principle which states
+that everything should be explained in the simplest possible way given the
+observed constraints.
+
+More formally speaking, under the observed data $X$, the distribution which is
+followed by a physical system is the following:
+\begin{equation}\label{eq:background_max_ent}
+  \hat p(c) = \arg \max_{p \colon \mathrm{obs}(p) = X} H(p),
+\end{equation}
+where $\mathrm{obs}(p)$ is the function which yields observed data (also-called
+\textit{testable information}; for example, it extracts moments of 
+the distribution~--- and thus in some sense ``tests'' it).
+
+We will largely utilize the fact that the maximum entropy distribution under certain
+constraints is the Gibbs distribution:
+\begin{align}
+  p_\beta(c|\data) &=\frac{1}{Z(\beta, X)} \exp(-\beta R(c, \data))
+    \quad\text{with} \notag \\
+  \quad Z(\beta, \data) &= \sum_{c^\prime\in \C} \exp(-\beta R(c^\prime, \data))\,,
+\end{align}
+where $R(c, X)$ is determined explicitly by the context, and $\beta$ comes from
+the method of Lagrange multipliers when optimizing~\eqref{eq:background_max_ent}
+and has a semantics of an \textit{inverse temperature}.
+
+

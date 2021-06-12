@@ -1,0 +1,177 @@
+%!TEX root = ../gronskiy_phd_thesis.tex
+\chapter*{Abstract}
+
+Dealing with noisy inputs to optimization problems has been one of the central
+tasks in the field of inference since its invention. The reason is clear: no
+data comes without measurement uncertainty.  \textit{Robustly optimizing} under
+such uncertainty is the first cornerstone of this thesis. The second cornerstone
+stems from an idea of contemplating uncertain optimization problems~---
+combinatorial ones in our case,~--- as \textit{large disordered systems} and
+analyzing their optimization behavior using the methods of statistical mechanics.
+Questions concerning optimization methods per se~--- e.g. related to a specific
+optimization procedure or guarantees thereof,~--- are not considered in this work.
+
+More precisely, we first address robust optimization under uncertainty by means
+of an approximation set-based approach to inference. Here, \textit{approximation
+set-based} approach refers to a family of methods regularizing the Empirical
+Risk Minimization (ERM). One performs it by sampling from a set of near-optimal
+solutions instead of returning the ERM optimizer.  We will describe this
+approach and design proof-of-concept experiments which support its usability. In
+addition, we will address one of the known computational bottlenecks of the
+approach by proving and testing theoretical results.
+
+Second, we expand the approximation set-based approach to the field of
+algorithmic combinatorial optimization under uncertain input, picking as an
+example its application to the  Minimum Spanning Tree (MST) problem. In short,
+the aim is to perform approximation by means of optimal stopping of the
+algorithm. We will derive a fast computation pipeline which is free of
+computational bottlenecks mentioned above; we then carry out experiments
+revealing an ability of our approach not only to robustly solve MST problems,
+but also to establish a score that ranks various algorithms according to their
+expected localization error~--- as in model validation.
+
+Next, we gradually shift our focus to Maximum Entropy inference for
+combinatorial optimization problems. Considering them as large disordered
+particle systems~\citep{book/MezardM09} driven by energy optimization via Gibbs
+distributions, we rigorously study a so-called \textit{Gibbs relaxation} of the
+approximation set-based approach. Surprisingly, this study leads to a prominent
+mathematical problem~--- asymptotically-precise computing of \textit{free
+energy},~--- which we then fully solve for a special class of combinatorial
+optimization problems. Thus, in this part of the thesis we fulfill a twofold
+task: on the one hand, we study properties of Gibbs relaxation of approximate
+robust optimization; the other, we prove a theoretical result, which is of an
+independent interest in statistical mechanics.
+
+Last, we drift away from approximate inference and remain in statistical
+mechanical setting. Inspired by the theoretical results described in the
+previous paragrpah, we ask fundamental questions about statistical mechanics of
+combinatorial optimization problems and how their properties define their
+solution structure. We pick a combinatorial optimization problem (sparse Minimum
+Bisection Problem, sMBP) and compare its asymptotic behavior with the one of
+well-known Random Energy Model (REM,~\citealp{derrida81}), leading to some
+interesting conjectures about differences in their search complexity.
+
+\chapter*{Zusammenfassung}
+
+Von Anfang an war die Einbeziehung des Rauschens in die Eingabe von
+Optimierungsproblemen ein zentrales Problem im Bereich der Inferenz. Der Grund
+dafür ist klar: Daten sind inherent mit gewissen Unsicherheiten in Ihrer
+Erhebung verbunden. \textit{Robuste Optimierung} unter Berücksichtigung solcher Unsicherheiten
+ist der erste Eckpfeiler dieser Dissertation. Der zweite Eckpfeiler beruht auf
+der Idee, dass man verrauschte Optimierungsprobleme~--- in unserem Fall
+kombinatorische,~--- als \textit{grosse ungeordnete Systeme} betrachtet und
+deren Optimierungsverhalten mittels statistischer Mechanik analysiert. Die
+Fragen, die sich auf Optimierungsverfahren beziehen (z.B. im Zusammenhang mit
+einer spezifischen Optimierungsmethode oder deren Effizienz), sind in dieser Arbeit
+nicht berücksichtigt.
+
+
+Erstens konzentrieren wir uns auf robuste Optimierung unter Unsicherheit mittels
+des \textit{auf Approximationsmengen-basierten} (approximation set-based)
+Ansatzes für Inferenz. Hier bezieht sich der Begriff des Approximationsmengen
+basierten Ansatzes auf eine Familie von Methoden, welche die Empirische
+Risiko-Minimierung (Empirical Risk Minimization, ERM) regularisieren. Man macht
+es, indem man aus einer Menge von nahezu optimalen Lösungen Stichproben zieht,
+statt eine ERM-Lösung als Antwort zurückzugeben. Wir beschreiben diesen Ansatz
+und führen Proof-of-Concept-Experimente aus, welche die Anwendbarkeit des
+Konzepts zeigen. Ausserdem beschäftigen wir uns mit den bekannten rechnerischen
+Engpässen diesen Ansatzes, indem wir theoretische Einsichten anbieten und
+testen.
+
+Zweitens, erweitern wir den Approximationsmengen-basierten Ansatz auf dem Gebiet
+der kombinatorischen Optimierung gegeben Unsicherheit in der Eingabe, indem wir
+als Beispiel das Minimale-Spannbaum-Problem auswählen (Minimum Spanning Tree,
+MST). Kurz gesagt besteht unser Ziel darin, eine Approximation durch optimales
+Anhalten des Algorithmus zu erzielen. Wir präsentieren eine schnelle
+Berechnungspipeline, die von den oben erwähnten Berechnungsenpässen befreit ist;
+dazu führen wir Experimente durch, die zeigen dass der oben definierte Ansatz
+nicht nur in der Lage ist, MST-Probleme zuverlässig zu lösen, sondern auch einen
+Ranking Wert einführt, der verschiedene Algorithmen nach ihrem
+Lokalisierungsfehler bewertet~--- wie beim Modellvalidierungsverfahren.
+
+Im Anschluss richten wir den Fokus auf die Maximum-Entropie-Inferenz für
+kombinatorische Optimierungsprobleme. Wir betrachten sie als grosse ungeordnete
+Partikelsysteme~\citep{book/MezardM09}, die ihr Energieniveau mittels
+Gibbs-Verteilungen optimieren. Wir führen eine thoretische Untersuchung der
+sogenannten \textit{Gibbs-Relaxation} des Approximationsmengen basierten
+Ansatzes aus. Unerwartet, führt diese Untersuchung zu einem berühmten
+mathematischen Problem~--- der asymptotisch genauen Berechnung der
+\textit{freien Energie},~--- welches wir dann für eine spezielle Klasse von
+kombinatorischen Optimierungsproblemen vollständig lösen. Somit liefert dieser
+Teil  zwei Beiträge: einerseits untersuchen wir Eigenschaften der
+Gibbs-Relaxation für robuste Optimierung; andererseits erreichen wir ein
+theoretisches Ergebnis, das eine unabhängige Bedeutung für die statistische
+Mechanik hat.
+
+Zuletzt entfernen wir uns von robuster Inferenz und bleiben im
+statistisch-mechanischen Bereich. Inspiriert durch die oben erwähnten
+theoretischen Ergebnisse, stellen wir fundamentale Fragen zur statistischen
+Mechanik kombinatorischer Optimierungsprobleme und wie deren Eigenschaften die
+Lösungsstruktur definieren. Wir wählen ein kombinatorisches Optimierungsproblem
+(sparse Minimum Bisection Problem, sMBP) und vergleichen sein asymptotisches
+Verhalten mit dem des bekannten Random Energy Models (REM,~\citealp{derrida81}),
+was zu einigen spannenden Vermutungen über Unterschiede in ihrer Suchkomplexität
+führt.
+
+% Umgehen mit dem Rauschen in Angaben für Optimierungsporbleme war seit der
+% Erfindung eine von zentralen Angaben im Bereich der Inferenz. Grund dafür ist
+% klar: Daten kommen immer mit gewisser Unsicherheit in Messungen. \textit{Robuste
+% Optimierung} unter solcher Unsichercheit ist der erste Eckpfeiler dieser
+% Dissertation. Der zweite Eckpfeiler stammt aus der Idee, dass man verrauschte
+% Optimierungsprobleme~--- in unserem Fall kombinatorische,~--- als \textit{grosse
+% ungeordnete Systeme} beachtet und deren Optimierungsverhalten mittels
+% statistischer Mechanik analysiert. Die Fragen, die sich auf
+% Optimierungsverfahren beziehen (z.B.~im Zusammenhang mit spezifischer
+% Optimierungsmethode oder deren Leistung), sind in dieser Arbeit nicht
+% berücksichtigt.
+
+% Erstens konzentrieren wir uns auf robuste Optimierung unter Unsicherheit mittels
+% des auf Approximationsmengen basierten (approximation set-based) Ansatzes für
+% Inferenz. Hier bezieht sich der Begriff \textit{Aproximationsmenge-basierter
+% Ansatz} auf eine Familie von Methoden, die die Empirische Risiko-Minimierung
+% (Empirical Risk Minimization, ERM) regularisieren. Man macht es, indem man aus
+% einer Menge von nahezu optimalen Lösungen samplet, statt ERM-Lösung als die
+% Antwort zurückzugeben. Diese einfache Idee ist der Vicinal Risiko-Minimierung
+% (Vicinal Risk Minimization,~VRM,~\citealp{chapelle01}) sehr nahe, die ein
+% ähnliches Konzept verwendet, das versucht, Verbundsrisiko aller nahezu optimalen
+% Lösungen gleichzeitig zu minimieren. Wir werden diesen Ansatz beschreiben und
+% Proof-of-Concept-Experimente ausführen, die seine Anwendbarkeit beweisen.
+% Ausserdem werden wir uns mit den bekannten rechnerischen Engpässen dieses
+% Ansatzes beschäftigen, indem wir theoretische Ergebnisse anbieten und testen.
+
+% Zweitens, erweitern wir den Approximationsmengen-basierten Ansatz auf dem Gebiet
+% der algorithmischen kombinatorischen Optimierung unter unsicheren Eingaben,
+% indem wir als Beispiel die Anwendung auf das Minimales-Spannbaum-Problem
+% (Minimum Spanning Tree, MST) auswählen. Kurz gesagt, besteht unseres Ziel darin,
+% eine Approximierung zu erlediegen, indem man das Algorithmus optimal Anhält. Wir
+% werden eine schnelle Berechnungspipeline präsentieren, die von den oben
+% erwähnten Berechnungsengpässen befreit ist; dazu werden wir dann Experimente
+% durchführen, die zeigen, dass der oben definierte Ansatz nicht nur in der Lage
+% ist, MST-Probleme zuverlässig zu lösen, sondern auch einen Ranking-Wert einfürt,
+% der verschiedene Algorithmen nach ihrem erwarteten Lokalisierungsfehler
+% rangiert~--- ähnlich zum Modellvalidierungsverfahren.
+
+% Danach fokussieren wir auf die statistische Mechanik kombinatorischer
+% Optimierungsprobleme. Wir betrachten sie als grosse ungeordnete
+% Partikelsysteme~\citep{book/MezardM09}, die ihren Energieniveau mittels
+% Gibbs-Verteilungen optimieren.  Wir führen eine thoretische Untersuchung
+% sogenannter \textit{Gibbs-Relaxation} des Approximationsmengen-basierten
+% Ansatzes aus. Unerwartet, führt diese Untersuchung zu einem berühmten
+% mathematischen Problem~--- der asymptotisch genauer Berechnung der
+% \textit{freien Energie},~--- das wir dann für eine spezielle Klasse von
+% kombinatorischen Optimierungsproblemen vollständig lösen. Somit ist der Beitrag
+% dieses Teils zweifältig: einerseits untersuchen wir Eigenschaften der
+% Gibbs-Relaxation für robuste Optimierung; andererseits erreichen wir ein 
+% theoretisches Ergebnis, das eine unabhängige Bedeutung für die statistische
+% Mechanik hat.
+
+% Zuletzt entfernen wir uns von robuster Inferenz und bleiben im
+% statistisch-mechanischen Bereich. Inspiriert durch die oben erwähnten
+% theoretischen Ergebnisse, stellen wir fundamentale Fragen zur statistischen
+% Mechanik kombinatorischer Optimierungsprobleme und wie deren thermodynamische
+% Eigenschaften die Lösungsstruktur definieren. Wir wählen ein kombinatorisches
+% Optimierungsproblem (sparse Minimum Bisection Problem, sMBP) und vergleichen
+% sein \textit{thermodynamisches} Verhalten mit dem des berühmten Random Energy
+% Models (REM,~\citealp{derrida81}), was zu einigen spannenden Vermutungen über
+% Unterschiede in ihrer Suchkomplexität führt.
+

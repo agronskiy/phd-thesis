@@ -1,0 +1,91 @@
+%!TEX root = ../../gronskiy_phd_thesis.tex 
+\begin{tikzpicture}
+\begin{groupplot}[
+    group style={
+        group name=my plots,
+        group size=3 by 1,
+        xlabels at=edge bottom,
+        ylabels at=edge left,
+        vertical sep=20pt
+    },
+    scale only axis,
+    width=\textwidth,
+    height=0.1\textheight,
+    footnotesize,
+    xticklabels={,,},
+    yticklabels={,,},
+    ymin=0,
+    ymax=2.5,
+    % ylabel style={yshift=-0.6cm},
+    xlabel style={yshift=0.3cm},
+    xlabel=solutions,
+    ylabel=Gibbs posteriors,
+    axis background/.style={fill=bkgndgray1}
+]
+
+\nextgroupplot[title=\text{$\beta=0.25$: underfitting}]
+
+\newcommand\betaplot{0.25}
+\addplot[
+       scarletred1,
+       domain=-2:2,
+       samples=201,
+       line width = 1.5pt
+    ]
+       {exp(-(x+0.3)^2 * \betaplot) * (sqrt(\betaplot / pi))};
+    \addplot[
+       skyblue1,
+       domain=-2:2,
+       samples=201,
+       line width = 1.5pt
+    ]
+       {exp(-(x-0.3)^2 * \betaplot) * (sqrt(\betaplot / pi))};
+       \draw[densely dashed] ({axis cs:-0.3,0}|-{rel axis cs:0,0}) -- ({axis cs:-0.3,0}|-{rel axis cs:0,1});
+       \draw[densely dashed] ({axis cs:0.3,0}|-{rel axis cs:0,0}) -- ({axis cs:0.3,0}|-{rel axis cs:0,1});
+
+\nextgroupplot[title=\text{$\beta=2.8$: optimal}]
+
+\newcommand\betaplot{2.8}
+\addplot[
+       scarletred1,
+       domain=-2:2,
+       samples=201,
+       line width = 1.5pt
+    ]
+       {exp(-(x+0.3)^2 * \betaplot) * (sqrt(\betaplot / pi))};
+    \addplot[
+       skyblue1,
+       domain=-2:2,
+       samples=201,
+       line width = 1.5pt
+    ]
+       {exp(-(x-0.3)^2 * \betaplot) * (sqrt(\betaplot / pi))};
+       \draw[densely dashed] ({axis cs:-0.3,0}|-{rel axis cs:0,0}) -- ({axis cs:-0.3,0}|-{rel axis cs:0,1})
+          node[color = scarletred1, near end, above, sloped] {\small{$c^\bot(X')$}};
+       \draw[densely dashed] ({axis cs:0.3,0}|-{rel axis cs:0,0}) -- ({axis cs:0.3,0}|-{rel axis cs:0,1})
+          node[color = skyblue1, near end, below, sloped] {\small{$c^\bot(X'')$}};
+\node[left, color=scarletred1] at (axis cs: -0.6, 0.7) {\small $p_\beta(\cdot|X')$};
+\node[right, color=skyblue1] at (axis cs: 0.6, 0.7) {\small $p_\beta(\cdot|X'')$};
+
+\nextgroupplot[title=\text{$\beta=19.5$: overfitting}]
+
+\newcommand\betaplot{19.5}
+\addplot[
+       scarletred1,
+       domain=-2:2,
+       samples=201,
+       line width = 1.5pt
+    ]
+       {exp(-(x+0.3)^2 * \betaplot) * (sqrt(\betaplot / pi))};
+    \addplot[
+       skyblue1,
+       domain=-2:2,
+       samples=201,
+       line width = 1.5pt
+    ]
+       {exp(-(x-0.3)^2 * \betaplot) * (sqrt(\betaplot / pi))};
+       \draw[densely dashed] ({axis cs:-0.3,0}|-{rel axis cs:0,0}) -- ({axis cs:-0.3,0}|-{rel axis cs:0,1});
+       \draw[densely dashed] ({axis cs:0.3,0}|-{rel axis cs:0,0}) -- ({axis cs:0.3,0}|-{rel axis cs:0,1});
+
+\end{groupplot}
+\end{tikzpicture}

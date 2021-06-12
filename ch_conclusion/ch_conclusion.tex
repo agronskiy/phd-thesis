@@ -1,0 +1,97 @@
+%!TEX root = ../gronskiy_phd_thesis.tex
+\chapter{Concluding Remarks}
+\label{ch:conclusion}
+
+\hfill
+\begin{minipage}[t]{.75\textwidth}
+\textit{``The measure of greatness in a scientific idea is the extent to which
+it stimulates thought and opens up new lines of research.''} \\
+  \hrule
+  \vspace{.2cm}
+  \hfill
+  \textsc{---  Paul DIRAC}
+\end{minipage}
+\\[.5cm]
+
+In this thesis, we addressed the problem of robust approximate optimization in
+different settings: general, algorithmic and thermodynamic, and also looked into
+the thermodynamic behavior of optimization problem in a more general (i.e. not
+related to approximation) sense. Because detailed remarks are given at the end
+of each chapter, here we give some very general thoughts about possible
+directions of the further research.
+
+\section{Approximate Optimization in General}
+
+It would be interesting to extend the approaches presented in
+Chapter~\ref{ch:gen_appch} to the case of more than two instances.
+While some straightforward generalizations may exist~--- e.g. mechanistically
+extend the formula for ASC score, adding more terms in nominator and
+denominator,~--- it becomes unclear how to justify it from the point of view of
+coding theory. It can require modifying the definition of the channel which
+we presented in that chapter.
+
+Further, while we partially addressed the question of computing intersection
+cardinalities, this result relies on knowing distributions, which renders it
+unusable in practice or at least requires the use of plug-in estimators. It
+would be beneficial to design a class of problems for which this issue
+is eliminated. We partially did this for algorithmic problems, but at the cost
+of worse performance, as noted in the discussion of that chapter.
+
+Last but not least, there is hope that one can integrate our approach into a
+toolbox of stability-related approaches (see related work), because our approach
+essentially attacks the problem of identifying stability conditions (by imposing
+approximations). It would be interesting to see a connection of our approach
+with more conventional techniques.
+
+\section{Robust Algorithmic Optimization}
+
+As we have seen, the ASC score establishes a ranking of algorithms, which also
+yields a corresponding ranking of their localization errors. Is this by chance or
+can it be proven rigorously? Another question here arises. The
+Reverse-Delete algorithm requires many more steps than Prim's and Kruskal's (see
+experiments in Chapter~\ref{ch:mst}), but gains much better robustness.
+Obviously, this happens because Reverse-Delete is much more elaborate in
+exploring the graph: Prim's and Kruskal's algorithms eliminate unexplored edges
+much more aggressively, and thus ``skip'' a lot of opportunities without
+actually seeing them. We have a clear runtime vs. robustness trade-off, which
+raises a question: can one construct an intermediate algorithm using the above
+three as building blocks?
+
+Another massive task would be to study more algorithmic problems from this
+perspective. It must be recalled that the extension of ASC for algorithms was
+performed in some sense ``blindly'', since proving the communication error
+bounds (in analogy to that of Chapter~\ref{ch:gen_appch}) is hard in this case.
+Consequently, it might turn out that with other algorithmic problems this
+approach works much better/worse. Additional research would be beneficial here.
+
+\section{Thermodynamic Behavior of Optimization Problems}
+
+Although we have proven (Chapter~\ref{ch:free_energy}) the asymptotics of free
+energy in two specific cases, we still did not devise a general
+methodology. Although we are currently under an impression that there is no such
+general methodology, more attempts should be made.
+
+Next, we made and experimentally backed up an attractive conjecture about the
+behavior of free energy in more general cases than those where
+theoretic results were obtained. We brought up an intuitive explanation for it,
+and it is extremely interesting to continue a line of research on that.
+
+Further, it is still not clear how far one can go with the sparsity constraint
+(which, should be recalled, was introduced to reduce the influence of
+interactions between solutions without fully eliminating it). Current
+condition $\log n \ll d \ll n^{2/7}$ might be extended, if one uses more
+advanced bounding techniques.
+
+Finally, but no less importantly, the free energy behavior of Gibbs-regularized
+combinatorial optimization problems like sMBP looks very similar to that of REM
+(Chapter~\ref{ch:smbp_and_rem}). Is this coincidental or does this tell us
+anything about other aspects of their analogy? In particular, we see that they
+are obviously different from the algorithmic point of view: while REM represents
+total ``chaos'' with independent costs, the sMBP by definition has a certain
+amount of cost dependence and thus intuitively should allow a more efficient
+optimum searching than REM. Is this so, and if yes~--- can this line of
+reasoning be further developed?
+
+To understand that, one needs to properly estimate higher moments of the
+log-partition function, which is highly non-trivial, but for sure a noble goal.
+
